@@ -1,13 +1,56 @@
 ---
 title: "Sharon Klinkenberg"
 about:
-  template: jolla
+  id: hero-heading
+  template: trestles
   image: images/klinkenberg.jpg
+  image-width: 10em
+  image-shape: round
   links:
     - icon: linkedin
-      text: LinkedIn
+ #     text: LinkedIn
       href: https://www.linkedin.com/in/sharonklinkenberg/
     - icon: github
-      text: Github
+#      text: Github
       href: https://github.com/ShKlinkenberg
+    - icon: envelope
+      href: "javascript:window.location.href = 'mailto:' + ['s.klinkenberg','uva.nl'].join('@')"
+    - icon: youtube
+      href: https://www.youtube.com/channel/UCscyOTFuPepIFyyDWrf2CkQ
+    - icon: mortarboard-fill
+      href: https://scholar.google.nl/citations?user=rB1Afg4AAAAJ&hl=nl
 ---
+
+:::{#hero-heading}
+
+## About
+
+Dr Klinkenberg is a senior lecturer at the department of Communication Science. His teaching is mainly focused on statistics and research methods. Sharon is an educational innovator at the forefront of educational technology. As a winner of the national [SURF education award](https://www.surf.nl/winnaars-surf-onderwijsawards-2018-0), he specialized in digital assessment, and integrates formative and summative assessment in order to personalize large scale education. His research is focused on the validity and reliability of adaptive assessment methods and the effectiveness of blended learning interventions.
+
+:::
+
+### Interests
+
+* Digital Assessment
+* Computer Adaptive Testing
+* Psychometrics
+* Higher Education
+* Educational Technology
+
+### Education
+
+* LOL Educational Leadership Qualification
+* SKO Senior Lecturer Qualification
+* Dr. in Psychometrics
+* Drs. Psychology
+* Minor Computer Science
+
+### Experience
+
+* 
+
+
+## Research
+
+Content here
+
