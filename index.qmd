@@ -1,0 +1,13 @@
+---
+title: "Sharon Klinkenberg"
+about:
+  template: jolla
+  image: images/klinkenberg.jpg
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/sharonklinkenberg/
+    - icon: github
+      text: Github
+      href: https://github.com/ShKlinkenberg
+---
