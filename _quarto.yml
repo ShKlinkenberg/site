@@ -3,7 +3,9 @@ project:
   output-dir: docs
   render:
   - index.qmd
-  - /posts/*
+  - content/post/index.qmd
+  - content/post/switched/index.qmd
+  - content/post/*/*.qmd
 
 website:
   title: "Klinkenberg"

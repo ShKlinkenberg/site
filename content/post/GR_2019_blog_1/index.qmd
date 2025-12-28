@@ -1,15 +1,21 @@
 ---
-date    : "2019-03-20T10:30:00"
-draft   : false
-tags    : ["Grassroots", "videos"]
 title   : "3D tracked knowledge video"
-math    : true
-summary : "Creating next level knowledge videos"
+author  : "Klinkenberg"
+date    : "2019-03-20"
+# draft   : false
+# tags    : ["Grassroots", "videos"]
 
-image:
-  caption   : "EA Tutorials"
-  placement : 3
+# math    : true
+# summary : "Creating next level knowledge videos"
+
+# image:
+#   caption   : "EA Tutorials"
+#   placement : 3
 ---
+
+:::{.column-screen}
+![](featured.png)
+:::
 
 It's that time of the year again. The grass is turning green and so, it's time for a new grassroots project. This time I'm going to dive into the world of 3D tracking in Adobe After Effects to create next level knowledge videos. 
 

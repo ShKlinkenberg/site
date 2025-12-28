@@ -1,15 +1,21 @@
 ---
-date    : "2020-03-11T12:00:00"
-draft   : false
-tags    : ["Grassroots", "videos"]
 title   : "Timing is everything"
-math    : true
-summary : "Creating next level knowledge videos"
+author  : "Klinkenberg"
+date    : "2020-03-11"
+# draft   : false
+# tags    : ["Grassroots", "videos"]
 
-image :
-  caption   : "Adobe Audition"
-  placement : 3
+# math    : true
+# summary : "Creating next level knowledge videos"
+
+# image :
+#   caption   : "Adobe Audition"
+#   placement : 3
 ---
+
+:::{.column-screen}
+![](featured.png)
+:::
 
 As mentioned in my [previous grassroots blog](http://www.klinkenberg.amsterdam/post/gr_2019_blog_2/), creating the animation I wanted for my 3D tracking video wasn't that hard. This time I decided to follow my own advice and write the script first. After recording the audio in one session and trimming all the mistakes, I finally had an outline for the timing of the animation.
 

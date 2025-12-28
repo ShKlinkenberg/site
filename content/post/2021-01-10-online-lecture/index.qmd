@@ -2,14 +2,19 @@
 title   : "Live Online Lecturing"
 author  : "Klinkenberg"
 date    : '2021-01-10'
-tags    : ["OBS", "online","lecture", "live"]
-math    : false
-summary : "Teaching from my kids bedroom during the pandemic."
+# tags    : ["OBS", "online","lecture", "live"]
+# math    : false
+# summary : "Teaching from my kids bedroom during the pandemic."
 
-image:
-  caption : "Teaching from my kids desk."
-  placement : 3
+# image:
+#   caption : "Teaching from my kids desk."
+#   placement : 3
 ---
+
+:::{.column-screen}
+![](featured.png)
+:::
+
 
 I have been teaching a large scale course amidst the pandemic. In this post, I want to share my experiences with live lecturing online.
 
@@ -17,11 +22,11 @@ As the course has been around for quite some time, we had the lecture recordings
 
 As mentioned in my [previous blog](http://www.klinkenberg.amsterdam/post/2020-08-16-lecture-setup/), I used [OBS](https://obsproject.com) as my central hub. Though the whole process has become much more straightforward with the new OBS virtual webcam feature. Just hit the start virtual webcam button, and you can use it in any video conferencing tool.
 
-![Desk](/media/desk.png)
+![Desk](desk.png)
 
 As can be seen from the picture above, I teach from my kids' bedroom, armed with a couple of NERF's. I use apple's [Sidecar](https://www.imore.com/how-use-sidecar-your-mac-and-ipad) to use my iPad as a second monitor, [clamped](https://www.smallrig.com/smallrig-multi-functional-crab-shaped-clamp-with-ballhead-magic-arm-2164.html) to a shelf with a [JOBI tablet grip](https://joby.com/be-en/griptight-pro-tablet-jb01395-config/). Placed at eye level to the right of [my camera](https://www.canon.nl/cameras/eos-m50/), it matches the scene when I look at the screen. 
 
-![Screen grab](/media/screen_grab.png)
+![Screen grab](screen_grab.png)
 
 My camera has a cheap plastic teleprompter mounted. With my iPhone logged into zoom. This lets me see my presentation when I speak, see my students when they ask questions, and Look straight into the camera.
 

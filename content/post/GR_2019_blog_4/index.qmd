@@ -1,15 +1,21 @@
 ---
-date    : "2021-01-19T12:00:00"
-draft   : false
-tags    : ["Grassroots", "videos"]
 title   : "3D tracked!"
-math    : true
-summary : "Cool, but not worth the effort."
+author  : "Klinkenberg"
+date    : "2021-01-19"
+# draft   : false
+# tags    : ["Grassroots", "videos"]
 
-image:
-  caption   : "tracked in After Effects"
-  placement : 3
+# math    : true
+# summary : "Cool, but not worth the effort."
+
+# image:
+#   caption   : "tracked in After Effects"
+#   placement : 3
 ---
+
+:::{.column-screen}
+![](featured.png)
+:::
 
 Do you remember that [grassroots project I started back in 2019](https://www.klinkenberg.amsterdam/post/gr_2019_blog_1/)? Well, after months of COVID crisis management and online teaching, I finally came around to finishing the project during the winter break.
 

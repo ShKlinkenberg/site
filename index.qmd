@@ -1,5 +1,6 @@
 ---
 title: "Sharon Klinkenberg"
+subtitle: "Dr in Psychometrics | Senior Lecturer"
 about:
   id: hero-heading
   template: trestles
@@ -26,8 +27,6 @@ about:
 ## About {#about}
 
 Dr Klinkenberg is a senior lecturer at the department of Communication Science. His teaching is mainly focused on statistics and research methods. Sharon is an educational innovator at the forefront of educational technology. As a winner of the national [SURF education award](https://www.surf.nl/winnaars-surf-onderwijsawards-2018-0), he specialized in digital assessment, and integrates formative and summative assessment in order to personalize large scale education. His research is focused on the validity and reliability of adaptive assessment methods and the effectiveness of blended learning interventions.
-
-
 
 ### Interests
 
@@ -67,4 +66,4 @@ Content here
 
 ## Blog posts {#blog-posts}
 
-[All blogs](/post/index.qmd)
+[All blogs](/content/post/index.qmd)

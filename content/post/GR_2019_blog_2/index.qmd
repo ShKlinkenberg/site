@@ -1,15 +1,22 @@
 ---
-date    : "2019-12-06T12:00:00"
-draft   : false
-tags    : ["Grassroots", "videos"]
 title   : "Not 3D tracking yet"
-math    : true
-summary : "Creating next level knowledge videos"
+author  : "Klinkenberg"
+date    : "2019-12-06"
+# draft   : false
+# tags    : ["Grassroots", "videos"]
 
-image:
-  caption   : "After Effects"
-  placement : 3
+# math    : true
+# summary : "Creating next level knowledge videos"
+
+# image:
+#   caption   : "After Effects"
+#   placement : 3
 ---
+
+
+:::{.column-screen}
+![](featured.png)
+:::
 
 So, it’s taken some time before I could really start this grassroot project, but I finally got the ball rolling. Looking at my own plan in my [previous post]( http://www.klinkenberg.amsterdam/post/gr_2019_blog_1/) I immediately went another rout. As I will base my first video on my [earlier screencast on ANOVA](https://youtu.be/Q86DiHcuOVE) (in Dutch), I decided to download the auto generated transcript from my YouTube channel. This gave me a rough outline with timestamps and all.
 

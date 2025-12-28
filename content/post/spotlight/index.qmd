@@ -1,15 +1,21 @@
 ---
-date    : "2017-03-27T12:00:00"
-draft   : false
-tags    : ["VR", "Spotlight"]
 title   : "VR is so last year"
-math    : true
-summary : "Hands on with the Logitech Spotlight remote."
+author  : "Klinkenberg"
+date    : "2017-03-27"
+# draft   : false
+# tags    : ["VR", "Spotlight"]
+# 
+# math    : true
+# summary : "Hands on with the Logitech Spotlight remote."
 
-image:
-  caption   : "Logitech Spotlight"
-  placement : 3
+# image:
+#   caption   : "Logitech Spotlight"
+#   placement : 3
 ---
+
+:::{.column-screen}
+![](featured.png)
+:::
 
 So, we’re done with VR for lecture recordings. Why? We just can’t see the presentation, let alone the laser pointer. VR is out. Enter the next generation of presenter tools: The Logi(tech) Spotlight. The spotlight presenter promises to boost your confidence. But let’s ignore that nonsense.
 
