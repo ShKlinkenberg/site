@@ -23,34 +23,48 @@ about:
 
 :::{#hero-heading}
 
-## About
+## About {#about}
 
 Dr Klinkenberg is a senior lecturer at the department of Communication Science. His teaching is mainly focused on statistics and research methods. Sharon is an educational innovator at the forefront of educational technology. As a winner of the national [SURF education award](https://www.surf.nl/winnaars-surf-onderwijsawards-2018-0), he specialized in digital assessment, and integrates formative and summative assessment in order to personalize large scale education. His research is focused on the validity and reliability of adaptive assessment methods and the effectiveness of blended learning interventions.
 
-:::
+
 
 ### Interests
 
+:::: {.columns}
+
+::: {.column width="50%"}
+
 * Digital Assessment
-* Computer Adaptive Testing
+* Adaptive Testing
 * Psychometrics
 * Higher Education
 * Educational Technology
 
-### Education
+:::
 
-* LOL Educational Leadership Qualification
-* SKO Senior Lecturer Qualification
-* Dr. in Psychometrics
-* Drs. Psychology
-* Minor Computer Science
+::: {.column width="50%"}
 
-### Experience
+* Educational Leadership
+* Data Science
+* Learning Analytics
+* Blended Learning
+* Statistics Education
 
-* 
+:::
 
+::::
 
-## Research
+:::
+
+## Research {#research}
+
+### Highlighted Publications
+
+[Full Publication List](/publication/index.qmd)
 
 Content here
 
+## Blog posts {#blog-posts}
+
+[All blogs](/post/index.qmd)

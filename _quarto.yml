@@ -3,14 +3,18 @@ project:
   output-dir: docs
   render:
   - index.qmd
+  - /posts/*
 
 website:
-  title: "Home"
+  title: "Klinkenberg"
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
+    right:
+      - href: index.qmd#research
+        text: Research
+      - href: index.qmd#blog-posts
+        text: Blog
 
 format:
   html:
     theme: cosmo
+    smooth-scroll: true
