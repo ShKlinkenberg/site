@@ -19,7 +19,7 @@ website:
   page-footer: 
     left:
       - icon: c-circle
-      - text: ". 2026, Klinkenberg" 
+      - text: "⠀2026, Klinkenberg" 
     right: 
       - icon: github
         href: https://github.com/ShKlinkenberg/site
