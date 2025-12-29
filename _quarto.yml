@@ -6,6 +6,7 @@ project:
   - content/post/index.qmd
   - content/post/switched/index.qmd
   - content/post/*/*.qmd
+  - content/publication/index.qmd 
 
 website:
   title: "Klinkenberg"
@@ -15,8 +16,16 @@ website:
         text: Research
       - href: index.qmd#blog-posts
         text: Blog
+  page-footer: 
+    left:
+      - icon: c-circle
+      - text: ". 2026, Klinkenberg" 
+    right: 
+      - icon: github
+        href: https://github.com/ShKlinkenberg/site
 
 format:
   html:
     theme: cosmo
+    css: custom-style.css
     smooth-scroll: true

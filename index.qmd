@@ -20,13 +20,23 @@ about:
       href: https://www.youtube.com/channel/UCscyOTFuPepIFyyDWrf2CkQ
     - icon: mortarboard-fill
       href: https://scholar.google.nl/citations?user=rB1Afg4AAAAJ&hl=nl
+listing:
+  id: sample-listings
+  type: grid
+  contents:
+  - "content/post/*/*.qmd"
+  sort:
+  - "date desc"
+  max-items: 2
+  fields: [image, title, description]
+  grid-columns: 1
 ---
 
 :::{#hero-heading}
 
 ## About {#about}
 
-Dr Klinkenberg is a senior lecturer at the department of Communication Science. His teaching is mainly focused on statistics and research methods. Sharon is an educational innovator at the forefront of educational technology. As a winner of the national [SURF education award](https://www.surf.nl/winnaars-surf-onderwijsawards-2018-0), he specialized in digital assessment, and integrates formative and summative assessment in order to personalize large scale education. His research is focused on the validity and reliability of adaptive assessment methods and the effectiveness of blended learning interventions.
+Dr Klinkenberg is a senior lecturer at the department of Communication Science. His teaching is mainly focused on statistics and research methods. Sharon is an educational innovator at the forefront of educational technology. As a winner of the national [SURF education award](https://www.surf.nl/winnaars-surf-onderwijsawards-2018#:~:text=2018%20%2D%20Sharon%20Klinkenberg-,Sharon%20Klinkenberg,-%2D%20winnaar%20Docenten), he specialized in digital assessment, and integrates formative and summative assessment in order to personalize large scale education. His research is focused on the validity and reliability of adaptive assessment methods and the effectiveness of blended learning interventions.
 
 ### Interests
 
@@ -56,14 +66,48 @@ Dr Klinkenberg is a senior lecturer at the department of Communication Science. 
 
 :::
 
+
 ## Research {#research}
 
-### Highlighted Publications
+:::: {.columns}
 
-[Full Publication List](/publication/index.qmd)
+::: {.column width="45%"}
 
-Content here
+Highlighted Publications
+
+[Full Publication List](/content/publication/index.qmd)
+
+:::
+
+::: {.column width="55%"}
+
+::: {.zoom-img}
+![Rekentuin](images/rekentuin2.jpg)
+:::
+
+### Computer adaptive practice of Maths ability using a new item response model for on the fly ability and difficulty estimation
+
+In this paper we present a model for computerized adaptive practice and monitoring. This model is used in the Maths Garden, a web-based monitoring system, which includes a challenging web environment for children to practice arithmetic. Using a new item response model based on the Elo (1978) rating system and an explicit scoring rule, estimates of the ability of persons and the difficulty of items are updated with every answered item, allowing for on the fly item calibration...
+:::
+
+::::
+
 
 ## Blog posts {#blog-posts}
 
+:::: {.columns}
+
+::: {.column width="45%"}
+
 [All blogs](/content/post/index.qmd)
+
+:::
+
+::: {.column width="55%"}
+
+::: {#sample-listings}
+:::
+
+:::
+
+::::

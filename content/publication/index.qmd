@@ -5,3 +5,20 @@
 title: Publications
 # view: 4
 ---
+
+
+```{r}
+#| echo: false
+#| results: 'asis'
+
+# install.packages("scholar")
+library(scholar)
+
+## Define the id for Richard Feynman
+id <- 'rB1Afg4AAAAJ'
+
+## Get his profile
+# get_profile(id)
+
+format_publications(id, "Sharon Klinkenberg") |> cat(sep='\n\n')
+```

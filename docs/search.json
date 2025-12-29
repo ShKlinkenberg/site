@@ -25,14 +25,14 @@
     "href": "index.html#research",
     "title": "Sharon Klinkenberg",
     "section": "Research",
-    "text": "Research\n\nHighlighted Publications\nFull Publication List\nContent here"
+    "text": "Research\n\n\nHighlighted Publications\nFull Publication List\n\n\n\n\n\nRekentuin\n\n\n\n\nComputer adaptive practice of Maths ability using a new item response model for on the fly ability and difficulty estimation\nIn this paper we present a model for computerized adaptive practice and monitoring. This model is used in the Maths Garden, a web-based monitoring system, which includes a challenging web environment for children to practice arithmetic. Using a new item response model based on the Elo (1978) rating system and an explicit scoring rule, estimates of the ability of persons and the difficulty of items are updated with every answered item, allowing for on the fly item calibration…"
   },
   {
     "objectID": "index.html#blog-posts",
     "href": "index.html#blog-posts",
     "title": "Sharon Klinkenberg",
     "section": "Blog posts",
-    "text": "Blog posts\nAll blogs"
+    "text": "Blog posts\n\n\nAll blogs\n\n\n\n\n\n\n\n\n\n3D tracked!\n\n\n\n\n\n\n\n\n\n\n\n\n\nLive Online Lecturing\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "content/post/switched/index.html",
@@ -131,5 +131,12 @@
     "title": "3D tracked!",
     "section": "",
     "text": "Do you remember that grassroots project I started back in 2019? Well, after months of COVID crisis management and online teaching, I finally came around to finishing the project during the winter break.\n\n\nThough I’m moderately pleased with the result, my conclusion is that it’s way too much work to be worth the effort. Though I enjoyed messing around with adobe after effects, much time could have been saved by leaving this part to the experts.\nAs mentioned in my previous blog, It’s all about the timing. I came to appreciate this aspect of teaching even more during this project. Making an animation happen at the touch of a button, precisely at the right time, makes for a more natural teaching experience.\nAs I have been live lecturing online the last few months, I found this timing aspect can easily be done using interactive webGL widgets. As shown in the clip below, It takes so much less effort to get the timing right.\n\n\nImagine using these 3D models and overlaying them in realtime on the table or even augmented in a lecture hall. I feel a next grassroots coming up. You can read the previous grassroods blogs here."
+  },
+  {
+    "objectID": "content/publication/index.html",
+    "href": "content/publication/index.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Namesnik‐Silvester, K., Polak, M., Smits, N., Swinkels, J., Arends, L., & … (2025). ShareStats: An open statistics item bank developed by a community of instructors in higher education. Teaching Statistics. 47 (2), 129-138\nKlinkenberg, S. (2023). A psychometric perspective on personalized assessment in education. Sharon Klinkenberg.\nKlinkenberg, S. (2016). The Role of Formative Assessment in a Blended Learning Course. International Computer Assisted Assessment Conference. 63-71\nVen, SHG van der., Straatemeier, M., Jansen, BRJ., Klinkenberg, S., & … (2015). Learning multiplication: An integrated analysis of the multiplication ability of primary school children and the difficulty of single digit and multidigit multiplication problems. Learning and Individual Differences. 43, 48-62\nDraaijer, S., & Klinkenberg, S. (2015). A practical procedure for the construction and reliability analysis of fixed-length tests with randomly drawn test items. International Computer Assisted Assessment Conference. 47-60\nKlinkenberg, S. (2014). High speed high stakes scoring rule: Assessing the performance of a new scoring rule for digital assessment. International computer assisted assessment conference. 114-126\nJansen, BRJ., Louwerse, J., Straatemeier, M., Ven, SHG Van der., & … (2013). The influence of experiencing success in math on math anxiety, perceived math competence, and math performance. Learning and individual differences. 24, 190-197\nKlinkenberg, S., Straatemeier, M., & Maas, HLJ van der. (2011). Computer adaptive practice of maths ability using a new item response model for on the fly ability and difficulty estimation. Computers & Education. 57 (2), 1813-1824\nMaas, HLJ Van der., Klinkenberg, S., & Straatemeier, M. (2010). Rekentuin. nl: Combinatie van oefenen en toetsen. Examens. ,(4), 10-14\nMaas, H Van der., Straatemeier, M., & Klinkenberg, S. (2009). Rekenen in rekentuin: ook voor zwakke rekenaars?. Tijdschrift voor Remedial Teaching. 17\nKlinkenberg, S., Straatemeier, M., & Maas, H van der. (2009). Serious gaming in de Rekentuin: spelenderwijs oefenen en meten. UtrechtFIsme, Universiteit Utrecht.\nStraatemeier, M., Klinkenberg, S., & Maas, HLJ van der. (2009). Gedifferentieerd en adaptief rekenonderwijs in de Rekentuin. Pulse Primair Onderwijs. 1\nStraatemeier, M., Maas, H van der., & Klinkenberg, S. (2009). Werken in de Rekentuin: spelenderwijs oefenen en meten. Willem Bartjens. 28\nStraatemeier, M., Maas, HLJ van der., & Klinkenberg, S. (2009). Rekentuin. nl: web-based en game-based leren is leuk!. Vives. 98\nJansena, BRJ., Louwerse, J., Straatemeierb, M., Venc, SHG Van der., & … (NA). Accepted version.. **.\nKlinkenberg, S., Straatemeier, M., & Maas, H van der. (NA). Serious gaming in de Rekentuin. **.\nBorsboom, D., Dolan, C., Koele, P., Maas, H van der., Maris, G., Vorst, H., & … (NA). Validity of empirical research in psychology. **."
   }
 ]
