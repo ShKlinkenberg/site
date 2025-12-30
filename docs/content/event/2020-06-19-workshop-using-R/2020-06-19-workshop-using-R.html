@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Klinkenberg">
+<meta name="dcterms.date" content="2020-06-19">
 
-<title>Blog Posts – Klinkenberg</title>
+<title>Online workshop: Introduction to R, Rstudio, Rstudio Cloud and Rmarkdown – Klinkenberg</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,68 +70,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../../custom-style.css">
+<link rel="stylesheet" href="../../../custom-style.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -141,7 +83,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Klinkenberg</span>
     </a>
   </div>
@@ -152,24 +94,17 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html#research"> 
+    <a class="nav-link" href="../../../index.html#research"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html#talks"> 
+    <a class="nav-link" href="../../../index.html#talks"> 
 <span class="menu-text">Talks</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-fun" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Fun</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-fun">    
-        <li>
-    <a class="dropdown-item" href="../../content/post/index.html">
- <span class="dropdown-text">Blogs</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html#blog-posts"> 
+<span class="menu-text">Blog</span></a>
   </li>  
-    </ul>
-  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -187,14 +122,31 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog Posts</h1>
-</div>
+<h1 class="title">Online workshop: Introduction to R, Rstudio, Rstudio Cloud and Rmarkdown</h1>
+<p class="subtitle lead">Amsterdam Institute for Social Science Research (AISSR) - UvA</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">webinar</div>
+    <div class="quarto-category">rstudio</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Klinkenberg </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 19, 2020</p>
+    </div>
+  </div>
   
     
   </div>
@@ -204,265 +156,13 @@ window.Quarto = {
 </header>
 
 
+<iframe width="100%" height="415" src="https://www.youtube.com/embed/epsqxVKkYpE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+<p>In this workshop, we will dive into using Rmarkdown for presentations and reproducible research. We will use Rstudio cloud for education. At the end of this workshop, you will have a basic understanding of these tools and be able to apply it in your own research and courses.</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1611010800000" data-listing-file-modified-sort="1766947379209" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="217">
-<div class="thumbnail"><a href="../../content/post/GR_2019_blog_4/index.html" class="no-external">
-
-<p class="card-img-top"><img src="GR_2019_blog_4/featured.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../content/post/GR_2019_blog_4/index.html" class="no-external">3D tracked!</a>
-</h3>
-<div class="delink listing-description"><a href="../../content/post/GR_2019_blog_4/index.html" class="no-external">
-Do you remember that grassroots project I started back in 2019? Well, after months of COVID crisis management and online teaching, I finally came around to finishing the…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../content/post/GR_2019_blog_4/index.html" class="no-external">
-<div class="listing-date">
-Jan 19, 2021
-</div>
-<div class="listing-author">
-Klinkenberg
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1610233200000" data-listing-file-modified-sort="1766945862060" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="628">
-<div class="thumbnail"><a href="../../content/post/2021-01-10-online-lecture/index.html" class="no-external">
-
-<p class="card-img-top"><img src="2021-01-10-online-lecture/featured.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../content/post/2021-01-10-online-lecture/index.html" class="no-external">Live Online Lecturing</a>
-</h3>
-<div class="delink listing-description"><a href="../../content/post/2021-01-10-online-lecture/index.html" class="no-external">
-I have been teaching a large scale course amidst the pandemic. In this post, I want to share my experiences with live lecturing online.
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../content/post/2021-01-10-online-lecture/index.html" class="no-external">
-<div class="listing-date">
-Jan 10, 2021
-</div>
-<div class="listing-author">
-Klinkenberg
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1597528800000" data-listing-file-modified-sort="1766945764680" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="657">
-<div class="thumbnail"><a href="../../content/post/2020-08-16-lecture-setup/index.html" class="no-external">
-
-<p class="card-img-top"><img src="2020-08-16-lecture-setup/featured.jpg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../content/post/2020-08-16-lecture-setup/index.html" class="no-external">My Online Lecture Setup</a>
-</h3>
-<div class="delink listing-description"><a href="../../content/post/2020-08-16-lecture-setup/index.html" class="no-external">
-Strap in there, because this is going to be a deep dive. In a previous blog post, I already described how you could use open broadcast software (OBS) to overly a logo or…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../content/post/2020-08-16-lecture-setup/index.html" class="no-external">
-<div class="listing-date">
-Aug 16, 2020
-</div>
-<div class="listing-author">
-Klinkenberg
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1595541600000" data-listing-file-modified-sort="1766944278651" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="298">
-<div class="thumbnail"><a href="../../content/post/2020-07-24-back-to-the-mac.en/index.html" class="no-external">
-
-<p class="card-img-top"><img src="2020-07-24-back-to-the-mac.en/featured.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../content/post/2020-07-24-back-to-the-mac.en/index.html" class="no-external">Back to the Mac</a>
-</h3>
-<div class="delink listing-description"><a href="../../content/post/2020-07-24-back-to-the-mac.en/index.html" class="no-external">
-Remember that time I switched to windows? Well, after less than half a year, I already caved. Though I really tried to make this relationship work, in the end, there was…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../content/post/2020-07-24-back-to-the-mac.en/index.html" class="no-external">
-<div class="listing-date">
-Jul 24, 2020
-</div>
-<div class="listing-author">
-Klinkenberg
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1587333600000" data-listing-file-modified-sort="1766946378496" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="250">
-<div class="thumbnail"><a href="../../content/post/presentation_overlay/index.html" class="no-external">
-
-<p class="card-img-top"><img src="presentation_overlay/featured.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../content/post/presentation_overlay/index.html" class="no-external">Presentation Overlay</a>
-</h3>
-<div class="delink listing-description"><a href="../../content/post/presentation_overlay/index.html" class="no-external">
-So, the webinar on distance assessment was received quite well. Apart from the 200 attendees and now almost a hundred views on YouTube, I also received many questions on how…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../content/post/presentation_overlay/index.html" class="no-external">
-<div class="listing-date">
-Apr 20, 2020
-</div>
-<div class="listing-author">
-Klinkenberg
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1583881200000" data-listing-file-modified-sort="1766947232525" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="176">
-<div class="thumbnail"><a href="../../content/post/GR_2019_blog_3/index.html" class="no-external">
-
-<p class="card-img-top"><img src="GR_2019_blog_3/featured.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../content/post/GR_2019_blog_3/index.html" class="no-external">Timing is everything</a>
-</h3>
-<div class="delink listing-description"><a href="../../content/post/GR_2019_blog_3/index.html" class="no-external">
-As mentioned in my previous grassroots blog, creating the animation I wanted for my 3D tracking video wasn’t that hard. This time I decided to follow my own advice and write…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../content/post/GR_2019_blog_3/index.html" class="no-external">
-<div class="listing-date">
-Mar 11, 2020
-</div>
-<div class="listing-author">
-Klinkenberg
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1577540700000" data-listing-file-modified-sort="1766943581957" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="432">
-<div class="thumbnail"><a href="../../content/post/switched/index.html" class="no-external">
-
-<p class="card-img-top"><img src="switched/featured.jpg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../content/post/switched/index.html" class="no-external">I switched to windows!</a>
-</h3>
-<div class="delink listing-description"><a href="../../content/post/switched/index.html" class="no-external">
-#OMG it really happened. I switched to windows. After some twenty years of personal Mac use, I decided to switch. Now I’m not a complete noob to windows. I had my fair share…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../content/post/switched/index.html" class="no-external">
-<div class="listing-date">
-Dec 28, 2019
-</div>
-<div class="listing-author">
-Klinkenberg
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1575586800000" data-listing-file-modified-sort="1766947197953" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="345">
-<div class="thumbnail"><a href="../../content/post/GR_2019_blog_2/index.html" class="no-external">
-
-<p class="card-img-top"><img src="GR_2019_blog_2/featured.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../content/post/GR_2019_blog_2/index.html" class="no-external">Not 3D tracking yet</a>
-</h3>
-<div class="delink listing-description"><a href="../../content/post/GR_2019_blog_2/index.html" class="no-external">
-So, it’s taken some time before I could really start this grassroot project, but I finally got the ball rolling. Looking at my own plan in my previous post I immediately…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../content/post/GR_2019_blog_2/index.html" class="no-external">
-<div class="listing-date">
-Dec 6, 2019
-</div>
-<div class="listing-author">
-Klinkenberg
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-listing-date-sort="1553036400000" data-listing-file-modified-sort="1766946796144" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="294">
-<div class="thumbnail"><a href="../../content/post/GR_2019_blog_1/index.html" class="no-external">
-
-<p class="card-img-top"><img src="GR_2019_blog_1/featured.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../content/post/GR_2019_blog_1/index.html" class="no-external">3D tracked knowledge video</a>
-</h3>
-<div class="delink listing-description"><a href="../../content/post/GR_2019_blog_1/index.html" class="no-external">
-It’s that time of the year again. The grass is turning green and so, it’s time for a new grassroots project. This time I’m going to dive into the world of 3D tracking in…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../content/post/GR_2019_blog_1/index.html" class="no-external">
-<div class="listing-date">
-Mar 20, 2019
-</div>
-<div class="listing-author">
-Klinkenberg
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-listing-date-sort="1490565600000" data-listing-file-modified-sort="1766946237729" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="319">
-<div class="thumbnail"><a href="../../content/post/spotlight/index.html" class="no-external">
-
-<p class="card-img-top"><img src="spotlight/featured.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../content/post/spotlight/index.html" class="no-external">VR is so last year</a>
-</h3>
-<div class="delink listing-description"><a href="../../content/post/spotlight/index.html" class="no-external">
-So, we’re done with VR for lecture recordings. Why? We just can’t see the presentation, let alone the laser pointer. VR is out. Enter the next generation of presenter tools…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../content/post/spotlight/index.html" class="no-external">
-<div class="listing-date">
-Mar 27, 2017
-</div>
-<div class="listing-author">
-Klinkenberg
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -896,5 +596,5 @@ Klinkenberg
 
 
 
-<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

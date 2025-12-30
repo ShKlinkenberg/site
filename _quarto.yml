@@ -6,7 +6,10 @@ project:
   - content/post/index.qmd
   - content/post/switched/index.qmd
   - content/post/*/*.qmd
-  - content/publication/index.qmd 
+  - content/publication/index.qmd
+  - content/event/*/*.qmd
+  - content/event/_index.qmd 
+  
 
 website:
   title: "Klinkenberg"
@@ -14,8 +17,12 @@ website:
     right:
       - href: index.qmd#research
         text: Research
-      - href: index.qmd#blog-posts
-        text: Blog
+      - href: index.qmd#talks
+        text: Talks
+      - text: Fun
+        menu:
+        - href: content/post/index.qmd
+          text: Blogs
   page-footer: 
     left:
       - icon: c-circle

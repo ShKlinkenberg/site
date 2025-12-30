@@ -97,6 +97,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-talks .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-talks'] = new List('listing-talks', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
@@ -155,9 +183,20 @@ window.Quarto = {
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./index.html#blog-posts"> 
-<span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="./index.html#talks"> 
+<span class="menu-text">Talks</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-fun" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Fun</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-fun">    
+        <li>
+    <a class="dropdown-item" href="./content/post/index.html">
+ <span class="dropdown-text">Blogs</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -212,8 +251,6 @@ window.Quarto = {
 </div>
   </div>
   <div class="about-contents"><div id="hero-heading">
-<section id="about" class="level2">
-<h2 data-anchor-id="about">About</h2>
 <p>Dr Klinkenberg is a senior lecturer at the department of Communication Science. His teaching is mainly focused on statistics and research methods. Sharon is an educational innovator at the forefront of educational technology. As a winner of the national <a href="https://www.surf.nl/winnaars-surf-onderwijsawards-2018#:~:text=2018%20%2D%20Sharon%20Klinkenberg-,Sharon%20Klinkenberg,-%2D%20winnaar%20Docenten">SURF education award</a>, he specialized in digital assessment, and integrates formative and summative assessment in order to personalize large scale education. His research is focused on the validity and reliability of adaptive assessment methods and the effectiveness of blended learning interventions.</p>
 <section id="interests" class="level3">
 <h3 data-anchor-id="interests">Interests</h3>
@@ -237,7 +274,6 @@ window.Quarto = {
 </div>
 </div>
 </section>
-</section>
 </div></div>
 </div>
 
@@ -260,6 +296,48 @@ window.Quarto = {
 <h3 data-anchor-id="computer-adaptive-practice-of-maths-ability-using-a-new-item-response-model-for-on-the-fly-ability-and-difficulty-estimation">Computer adaptive practice of Maths ability using a new item response model for on the fly ability and difficulty estimation</h3>
 <p>In this paper we present a model for computerized adaptive practice and monitoring. This model is used in the Maths Garden, a web-based monitoring system, which includes a challenging web environment for children to practice arithmetic. Using a new item response model based on the Elo (1978) rating system and an explicit scoring rule, estimates of the ability of persons and the difficulty of items are updated with every answered item, allowing for on the fly item calibration…</p>
 </section>
+</div>
+</div>
+</section>
+<section id="talks" class="level2">
+<h2 data-anchor-id="talks">Talks</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><a href="./content/event/_index.html">All talks</a></p>
+</div><div class="column" style="width:55%;">
+<div id="listing-talks" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-1">
+<div class="g-col-1" data-index="0" data-categories="YXNzZXNzbWVudCUyQ29ubGluZS1wcm9jdG9yaW5n" data-listing-date-sort="1616713200000" data-listing-file-modified-sort="1767108423921" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
+<a href="./content/event/2021-03-26-webinar-kansen-en-dilemma-s-online-proctoring-na-corona/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="content/event/2021-03-26-webinar-kansen-en-dilemma-s-online-proctoring-na-corona/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Webinar: Kansen en dilemma’s online proctoring na corona
+</h5>
+<div class="card-text listing-description delink">
+Op vrijdag 26 maart organiseerde de Vraagbaak Online Onderwijs met de SURF Special Interest Group (SIG) Digitaal toetsen en de Werkgroep Toetsen op afstand het webinar…
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="YXNzZXNzbWVudCUyQ2luY2x1c2l2ZS1lZHVjYXRpb24lMkNvbmxpbmUtcHJvY3RvcmluZw==" data-listing-date-sort="1612738800000" data-listing-file-modified-sort="1767108693872" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="45">
+<a href="./content/event/2021-02-08-ecio-congress-2021/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="content/event/2021-02-08-ecio-congress-2021/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+ECIO congress 2021
+</h5>
+<div class="card-text listing-description delink">
+Panel participation at the ECIO congress 2021 on inclusive assessment. What is needed to make assessment more accessible.
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
 </div>
 </div>
 </section>
