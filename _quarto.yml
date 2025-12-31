@@ -9,6 +9,7 @@ project:
   - content/publication/index.qmd
   - content/event/*/*.qmd
   - content/event/_index.qmd 
+  - content/project/*.qmd
   
 
 website:
@@ -23,6 +24,8 @@ website:
         menu:
         - href: content/post/index.qmd
           text: Blogs
+        - href: content/project/index.qmd
+          text: Projects
   page-footer: 
     left:
       - icon: c-circle

@@ -1,25 +1,27 @@
-+++
-date = "2019-05-24T15:00:00"
-title = "Naar een inrichtingsmodel voor flexibele en veilige toetsafname"
-abstract = ""
-abstract_short = ""
-event = "SIG Digitaal Toetsen - SURF"
-event_url = "https://communities.surf.nl/artikel/naar-een-inrichtingsmodel-voor-flexibele-en-veilige-toetsafname"
-location = "Utrecht"
+---
+date: "2019-05-24"
+title: "Naar een inrichtingsmodel voor flexibele en veilige toetsafname"
+author: "Klinkenberg"
+categories: [assessment, BYOD, virtualization]
+# abstract: ""
+# abstract_short: ""
+# event: "SIG Digitaal Toetsen - SURF"
+# event_url: "https://communities.surf.nl/artikel/naar-een-inrichtingsmodel-voor-flexibele-en-veilige-toetsafname"
+# location: "Utrecht"
 
-selected = false
-math = true
+# selected: false
+# math: true
 
-url_pdf = ""
-url_slides = ""
-url_video = "https://youtu.be/F8iGR4tILE4"
+# url_pdf: ""
+# url_slides: ""
+# url_video: "https://youtu.be/F8iGR4tILE4"
 
-# Optional featured image (relative to `static/img/` folder).
-[header]
-image = "headers/bubbles-wide.jpg"
-caption = "My caption :smile:"
+# # Optional featured image (relative to `static/img/` folder).
+# [header]
+# image: "headers/bubbles-wide.jpg"
+# caption: "My caption :smile:"
 
-+++
+---
 
 <iframe width="100%" height="415"  src="https://www.youtube.com/embed/F8iGR4tILE4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

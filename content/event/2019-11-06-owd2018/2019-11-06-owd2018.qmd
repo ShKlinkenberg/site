@@ -26,4 +26,4 @@ Digitaal toetsen heeft de afgelopen 10 jaar een enorme vlucht gemaakt. Instellin
 
 Topic also covered by [Scienceguide.nl](https://www.scienceguide.nl/2018/11/onderwijs-moment-plek/)
 
-[Presentation slides on SlideShare](https://www.slideshare.net/DeOnderwijsdagen/geen-flexibilisering-zonder-digitaal-toetsen-sharon-klinkenberg-silvester-draaijer-owd18){.btn .btn-primary}
+[Presentation slides on SlideShare](https://www.slideshare.net/DeOnderwijsdagen/geen-flexibilisering-zonder-digitaal-toetsen-sharon-klinkenberg-silvester-draaijer-owd18){.btn .btn-outline-primary .btn-sm}
