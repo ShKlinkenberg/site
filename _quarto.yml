@@ -15,6 +15,7 @@ project:
 website:
   title: "Klinkenberg"
   favicon: images/klinkenberg.png
+  google-analytics: "G-218X91MVS0"
   navbar:
     right:
       - href: index.qmd#research
