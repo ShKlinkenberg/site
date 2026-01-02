@@ -144,7 +144,7 @@
     "href": "index.html#research",
     "title": "Sharon Klinkenberg",
     "section": "Research",
-    "text": "Research\n\n\nFull Publication List\n\n\n\n\n\nRekentuin\n\n\n\n\nComputer adaptive practice of Maths ability using a new item response model for on the fly ability and difficulty estimation\nIn this paper we present a model for computerized adaptive practice and monitoring. This model is used in the Maths Garden, a web-based monitoring system, which includes a challenging web environment for children to practice arithmetic. Using a new item response model based on the Elo (1978) rating system and an explicit scoring rule, estimates of the ability of persons and the difficulty of items are updated with every answered item, allowing for on the fly item calibration…"
+    "text": "Research\n\n\nFull Publication List\n\n\n\n\n\nComputer adaptive practice of Maths ability using a new item response model for on the fly ability and difficulty estimation\nIn this paper we present a model for computerized adaptive practice and monitoring. This model is used in the Maths Garden, a web-based monitoring system, which includes a challenging web environment for children to practice arithmetic. Using a new item response model based on the Elo (1978) rating system and an explicit scoring rule, estimates of the ability of persons and the difficulty of items are updated with every answered item, allowing for on the fly item calibration…"
   },
   {
     "objectID": "index.html#talks",

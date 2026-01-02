@@ -6,8 +6,9 @@ Retrieved 2025-12-29, License - CC BY-SA 4.0
 
 .zoom-img {
   width: 100%;
-  height: 240px;
+  height: 100%;
   overflow: hidden;
+  vertical-align: middle !important;
   border: solid 1px #ddd;
 }
 

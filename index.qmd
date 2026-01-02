@@ -86,9 +86,7 @@ I’m a psychometrician, statistician, and [educational innovator](https://www.s
 
 ::: {.column width="55%"}
 
-::: {.zoom-img}
-![Rekentuin](images/rekentuin2.jpg)
-:::
+<div class="zoom-img"><img src="images/rekentuin2.jpg"></div>
 
 ### Computer adaptive practice of Maths ability using a new item response model for on the fly ability and difficulty estimation
 
