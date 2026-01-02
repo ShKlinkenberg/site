@@ -1,8 +1,0 @@
----
-title: "Projects"
-listing:
-  contents:
-  - "*.qmd"
-  sort:
-  - "date desc"
----
