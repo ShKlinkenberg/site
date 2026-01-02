@@ -1,3183 +1,826 @@
-<!DOCTYPE html><html lang="en-us" >
-
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
-  
-  
-  <meta name="generator" content="Wowchemy 5.0.0-beta.1 for Hugo">
-  
-
-  
-
-  
-  
-
-  
-  
-  
-  
-  
-    
-    
-    
-  
-  
-
-  <meta name="author" content="Sharon Klinkenberg">
-
-  
-  
-  
-    
-  
-  <meta name="description" content="">
-
-  
-  <link rel="alternate" hreflang="en-us" href="https://www.klinkenberg.amsterdam/">
-
-  
-
-
-
-
-
-
-
-  
-
-
-
-
-  
-  
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-
-  
-  
-  
-  <meta name="theme-color" content="#0095eb">
-  
-
-  
-  
-  
-  <script src="/js/mathjax-config.js"></script>
-  
-
-  
-  
-  
-  
-    
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
-
-    
-    
-    
-      
-    
-    
-      
-      
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
-        
-      
-    
-
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
-    
-
-    
-
-    
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
-      
-    
-      
-
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-    
-
-  
-
-  
-  
-  
-    
-      
-      
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
-    
-  
-
-  
-  
-  
-  
-  
-  <link rel="stylesheet" href="/css/wowchemy.e28754fc95e31d0eea2e29285ec4e433.css">
-
-  
-
-
-
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135035399-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-135035399-1', {});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
-  
-
-  
-
-
-  
-  
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  
-
-  
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Klinkenberg">
-  
-
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
-
-  <link rel="canonical" href="https://www.klinkenberg.amsterdam/">
-
-  
-  
-  
-  
-  
-  
-  
-    
-    
-  
-  
-  <meta property="twitter:card" content="summary">
-  
-  <meta property="og:site_name" content="Klinkenberg">
-  <meta property="og:url" content="https://www.klinkenberg.amsterdam/">
-  <meta property="og:title" content="Klinkenberg">
-  <meta property="og:description" content=""><meta property="og:image" content="https://www.klinkenberg.amsterdam/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="https://www.klinkenberg.amsterdam/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
-  
-    <meta property="og:updated_time" content="2021-03-26T00:00:00&#43;00:00">
-  
-
-  
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://www.klinkenberg.amsterdam/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  },
-  "url": "https://www.klinkenberg.amsterdam/"
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Sharon Klinkenberg – Klinkenberg</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
 }
-</script>
-
-
-  
-
-
-  
-
-
-  
-
-
-
-
-
-  <title>Klinkenberg</title>
-
-</head>
-
-
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper  ">
-
-  
-  
-  
-  
-  
-  
-  
-  
-  <script src="/js/wowchemy-init.min.25bb65fc185bceea61395d5b0560127a.js"></script>
-
-  
-
-<aside class="search-results" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div id="search-box">
-        
-        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
-        
-      </div>
-
-      
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
-</aside>
-
-
-
-  <div class="page-header">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-  <div class="container">
-
-    
-    <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">Klinkenberg</a>
-    </div>
-    
-
-    
-    <button type="button" class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-    <span><i class="fas fa-bars"></i></span>
-    </button>
-    
-
-    
-    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">Klinkenberg</a>
-    </div>
-    
-
-    
-    
-    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
-
-      
-      <ul class="navbar-nav d-md-inline-flex">
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#about" data-target="#about"><span>Home</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#talks" data-target="#talks"><span>Talks</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#posts" data-target="#posts"><span>Posts</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#featured" data-target="#featured"><span>Publications</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#contact" data-target="#contact"><span>Contact</span></a>
-        </li>
-
-        
-        
-
-      
-
-        
-      </ul>
-    </div>
-
-    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-
-      
-      
-        
-      
-
-      
-      
-      <li class="nav-item">
-        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
-      </li>
-      
-
-      
-      
-
-      
-
-    </ul>
-
-  </div>
-</nav>
-
-
-  </div>
-
-  <div class="page-body">
-    
-
-
-
-
-
-
-
-
-
-
-
-  
-<span class="js-widget-page d-none"></span>
-
-
-
-
-
-  
-  
-  
-  
-
-
-
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="about" class="home-section wg-about  "  >
-   <div class="home-section-bg " ></div>
-    <div class="container">
-
-    
-
-      
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4">
-    <div id="profile">
-
-      
-      
-      <img class="avatar avatar-circle" src="/author/sharon-klinkenberg/avatar_hu809d6daa59c7c2f61bef6ed94abe6e86_539318_270x270_fill_q75_lanczos_center.jpg" alt="Sharon Klinkenberg">
-      
-
-      <div class="portrait-title">
-        <h2>Sharon Klinkenberg</h2>
-        
-
-        
-        <h3>
-          <a href="https://www.uva.nl/profiel/k/l/s.klinkenberg/s.klinkenberg.html" target="_blank" rel="noopener">
-          <span>University of Amsterdam</span>
-          </a>
-        </h3>
-        
-      </div>
-
-      <ul class="network-icon" aria-hidden="true">
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-        <li>
-          <a href="javascript:window.location.href%20=%20%27mailto:%27%20&#43;%20[%27s.klinkenberg%27,%27uva.nl%27].join%28%27@%27%29"  aria-label="envelope">
-            <i class="fas fa-envelope big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://www.linkedin.com/in/sharonklinkenberg/" target="_blank" rel="noopener" aria-label="linkedin">
-            <i class="fab fa-linkedin big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://www.youtube.com/channel/UCscyOTFuPepIFyyDWrf2CkQ" target="_blank" rel="noopener" aria-label="youtube">
-            <i class="fab fa-youtube big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="http://twitter.com/ShKlinkenberg" target="_blank" rel="noopener" aria-label="twitter">
-            <i class="fab fa-twitter big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://scholar.google.nl/citations?user=rB1Afg4AAAAJ&amp;hl=nl" target="_blank" rel="noopener" aria-label="graduation-cap">
-            <i class="fas fa-graduation-cap big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="http://github.com/shklinkenberg" target="_blank" rel="noopener" aria-label="github">
-            <i class="fab fa-github big-icon"></i>
-          </a>
-        </li>
-        
-      </ul>
-
-    </div>
-  </div>
-  <div class="col-12 col-lg-8">
-
-    
-    <h1>About</h1>
-
-    <div class="article-style">
-      <p>Sharon Klinkenberg is a lecturer at the department of Psychology. His teaching is mainly focussed on statistics and Psychological methods. Sharon is an educational innovator at the forefront of educational technology. As a winner of the national <a href="https://www.surf.nl/winnaars-surf-onderwijsawards-2018-0" target="_blank" rel="noopener">SURF education award</a>, he specialised in digital assessment, and integrates formative and summative assessment in order to personalize large scale education. His research is focussed on the validity and reliability of adaptive assessment methods and the effectiveness of blended learning interventions.</p>
-
-    </div>
-
-    <div class="row">
-
-      
-      <div class="col-md-5">
-        <h3>Interests</h3>
-        <ul class="ul-interests">
-          
-          <li>Digital Assessment</li>
-          
-          <li>Computer Adaptive Testing</li>
-          
-          <li>Psychometrics</li>
-          
-          <li>Higher Education</li>
-          
-          <li>Educational Technology</li>
-          
-        </ul>
-      </div>
-      
-
-      
-      <div class="col-md-7">
-        <h3>Education</h3>
-        <ul class="ul-edu fa-ul">
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">SKO Senior Lecturer Qualification</p>
-              <p class="institution">University of Amsterdam</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">BKO Lecturing Qualification</p>
-              <p class="institution">CNA</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">Drs. in Psychology</p>
-              <p class="institution">University of Amsterdam</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">Minor computer applications in social science</p>
-              <p class="institution">University of Amsterdam</p>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
-      
-
-    </div>
-  </div>
-</div>
-
-
-    
-
-    </div>
-  </section>
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="talks" class="home-section wg-pages  "  >
-   <div class="home-section-bg " ></div>
-    <div class="container">
-
-    
-      <div class="row  ">
-      
-        
-          <div class="col-12 col-lg-4 section-heading">
-            <h1>Recent &amp; Upcoming Talks</h1>
-            
-          </div>
-        
-      
-    
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-<div class="col-12 col-lg-8">
-
-  
-
-  
-    
-      
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/talk/webinar-kansen-en-dilemma-s-online-proctoring-na-corona/" >Webinar: Kansen en dilemma’s online proctoring na corona</a>
-    </h3>
-
-    
-    <a href="/talk/webinar-kansen-en-dilemma-s-online-proctoring-na-corona/"  class="summary-link">
-      <div class="article-style">
-        Op vrijdag 26 maart organiseerde de Vraagbaak Online Onderwijs met de SURF Special Interest Group (SIG) Digitaal toetsen en de Werkgroep Toetsen op afstand het webinar ‘Online proctoring na corona – de laatste ontwikkelingen’.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-      <div>
-        <span>
-          Mar 26, 2021 12:00 AM
-        </span>
-        
-      </div>
-      
-
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/talk/ecio-congress-2021/" >ECIO congress 2021</a>
-    </h3>
-
-    
-    <a href="/talk/ecio-congress-2021/"  class="summary-link">
-      <div class="article-style">
-        Panel participation on inclusive assessment
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-      <div>
-        <span>
-          Feb 8, 2021 12:00 AM
-        </span>
-        
-      </div>
-      
-
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://youtu.be/Aq4y2yQR8j0" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    
-    
-    <a href="/talk/ecio-congress-2021/" >
-      <img src="/talk/ecio-congress-2021/featured_hu0993c313b8de31fa834577e4513aabf3_185932_de908edc34dff78d59230d1fd6cb14a9.jpg" data-src="/talk/ecio-congress-2021/featured_hu0993c313b8de31fa834577e4513aabf3_185932_0x150_resize_q75_lanczos.jpg" alt="ECIO congress 2021" class="lazyload">
-    </a>
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/talk/nro-symposium-hoger-onderwijs/" >NRO Symposium hoger onderwijs</a>
-    </h3>
-
-    
-    <a href="/talk/nro-symposium-hoger-onderwijs/"  class="summary-link">
-      <div class="article-style">
-        Bijdrage aan het NRO Symposium 2021.
- Het online onderwijs brengt vraagstukken met zich mee over het op afstand of online toetsen en beoordelen van studenten. Hoe kunnen we dat nu en in de toekomst het beste vormgeven?
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-      <div>
-        <span>
-          Jan 15, 2021 12:00 AM
-        </span>
-        
-      </div>
-      
-
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    
-    
-    <a href="/talk/nro-symposium-hoger-onderwijs/" >
-      <img src="/talk/nro-symposium-hoger-onderwijs/featured_hue5898a7cb4e7c3fa0c83e5539b66d535_326155_0477a60ea9deefa622e1deb45498025d.jpg" data-src="/talk/nro-symposium-hoger-onderwijs/featured_hue5898a7cb4e7c3fa0c83e5539b66d535_326155_0x150_resize_q75_lanczos.jpg" alt="NRO Symposium hoger onderwijs" class="lazyload">
-    </a>
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/talk/webinar-online-proctoring-for-the-future/" >Webinar Online proctoring for the future</a>
-    </h3>
-
-    
-    <a href="/talk/webinar-online-proctoring-for-the-future/"  class="summary-link">
-      <div class="article-style">
-        Since the lockdown in March 2020 we have seen an enormous growth in the number of digital exams. Online proctoring in particular has been subject to a lot of discussion. The impact on the privacy of students is the main concern.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-      <div>
-        <span>
-          Dec 14, 2020 12:00 AM
-        </span>
-        
-      </div>
-      
-
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/talk/keuzes-en-mogelijkheden-bij-toepassing-van-online-proctoring/" >Keuzes en mogelijkheden bij toepassing van online proctoring</a>
-    </h3>
-
-    
-    <a href="/talk/keuzes-en-mogelijkheden-bij-toepassing-van-online-proctoring/"  class="summary-link">
-      <div class="article-style">
-        Sessie op de onderwijsdagen 2020 over online proctoring.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-      <div>
-        <span>
-          Dec 8, 2020 1:30 PM &mdash; 2:00 PM
-        </span>
-        
-        <span class="middot-divider"></span>
-        <span>Online</span>
-        
-      </div>
-      
-
-      
-      <div>
-        
-
-  <span >
-      <a href="/author/klinkenberg/">Klinkenberg</a></span>
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://youtu.be/G5zHdbHksOU" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://twitter.com/shklinkenberg" target="_blank" rel="noopener">
-    <i class="fab fa-twitter mr-1"></i>
-    Follow
-  </a>
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    
-    
-    <a href="/talk/keuzes-en-mogelijkheden-bij-toepassing-van-online-proctoring/" >
-      <img src="/talk/keuzes-en-mogelijkheden-bij-toepassing-van-online-proctoring/featured_hu5376c85a28a5f81d1a7015147a7be708_119412_c22cc08ede58ddce3b11c89a3b8eba25.jpg" data-src="/talk/keuzes-en-mogelijkheden-bij-toepassing-van-online-proctoring/featured_hu5376c85a28a5f81d1a7015147a7be708_119412_0x150_resize_q75_lanczos.jpg" alt="Keuzes en mogelijkheden bij toepassing van online proctoring" class="lazyload">
-    </a>
-    
-  </div>
-</div>
-
-    
-  
-
-  
-  
-  
-
-    
-    
-      
-    
-
-    
-
-    <div class="see-all">
-      <a href="/event/">
-        See all events
-        <i class="fas fa-angle-right"></i>
-      </a>
-    </div>
-  
-
-</div>
-
-
-    
-      </div>
-    
-
-    </div>
-  </section>
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="posts" class="home-section wg-pages  "  >
-   <div class="home-section-bg " ></div>
-    <div class="container">
-
-    
-      <div class="row  ">
-      
-        
-          <div class="col-12 col-lg-4 section-heading">
-            <h1>Recent Posts</h1>
-            
-          </div>
-        
-      
-    
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-<div class="col-12 col-lg-8">
-
-  
-
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/gr_2019_blog_4/" >3D tracked!</a>
-    </h3>
-
-    
-    <a href="/post/gr_2019_blog_4/"  class="summary-link">
-      <div class="article-style">
-        Cool, but not worth the effort.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    Jan 19, 2021
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    
-    
-    <a href="/post/gr_2019_blog_4/" >
-      <img src="/post/gr_2019_blog_4/featured_hueb290a5cc8b51c2c7333615f7a9e212c_463485_071824aa6257edfe11a9ddef06b03229.png" data-src="/post/gr_2019_blog_4/featured_hueb290a5cc8b51c2c7333615f7a9e212c_463485_0x150_resize_lanczos_2.png" alt="3D tracked!" class="lazyload">
-    </a>
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2021-01-10-online-lecture/" >Live Online Lecturing</a>
-    </h3>
-
-    
-    <a href="/post/2021-01-10-online-lecture/"  class="summary-link">
-      <div class="article-style">
-        Teaching from my kids bedroom during the pandemic.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    Jan 10, 2021
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    3 min read
-  </span>
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    
-    
-    <a href="/post/2021-01-10-online-lecture/" >
-      <img src="/post/2021-01-10-online-lecture/featured_hu639b7aefd72368745b21b4362191d13e_616132_5f8c4c50bc97c5bc74ba9707d84b6a95.png" data-src="/post/2021-01-10-online-lecture/featured_hu639b7aefd72368745b21b4362191d13e_616132_0x150_resize_lanczos_2.png" alt="Live Online Lecturing" class="lazyload">
-    </a>
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2020-08-16-lecture-setup/" >My Online Lecture Setup</a>
-    </h3>
-
-    
-    <a href="/post/2020-08-16-lecture-setup/"  class="summary-link">
-      <div class="article-style">
-        A deep dive into my online lecture setup.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    Aug 16, 2020
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    4 min read
-  </span>
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    
-    
-    <a href="/post/2020-08-16-lecture-setup/" >
-      <img src="/post/2020-08-16-lecture-setup/featured_hu901c9ae8d461673abd6609c3e56f58ff_810786_b3c09b81d09b6ce52cd75a178ab2fe4e.jpg" data-src="/post/2020-08-16-lecture-setup/featured_hu901c9ae8d461673abd6609c3e56f58ff_810786_0x150_resize_q75_lanczos.jpg" alt="My Online Lecture Setup" class="lazyload">
-    </a>
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/2020-07-24-back-to-the-mac.en/" >Back to the Mac</a>
-    </h3>
-
-    
-    <a href="/post/2020-07-24-back-to-the-mac.en/"  class="summary-link">
-      <div class="article-style">
-        I caved, there was no love.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    Jul 24, 2020
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    2 min read
-  </span>
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    
-    
-    <a href="/post/2020-07-24-back-to-the-mac.en/" >
-      <img src="/post/2020-07-24-back-to-the-mac.en/featured_hu023df935650c8afd5e8b15386f77fb7e_281417_1dcc535acf928d6b0d549c90cd031be5.png" data-src="/post/2020-07-24-back-to-the-mac.en/featured_hu023df935650c8afd5e8b15386f77fb7e_281417_0x150_resize_lanczos_2.png" alt="Back to the Mac" class="lazyload">
-    </a>
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/presentation_overlay/" >Presentation Overlay</a>
-    </h3>
-
-    
-    <a href="/post/presentation_overlay/"  class="summary-link">
-      <div class="article-style">
-        How to use OBS to overlay your presentation on your webcam image.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    Apr 20, 2020
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    2 min read
-  </span>
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    
-    
-    <a href="/post/presentation_overlay/" >
-      <img src="/post/presentation_overlay/featured_hue6e98563a43e1fff71b9dbbf8b46eac3_168340_6c0c892b8a5998142f571842d559c3ed.png" data-src="/post/presentation_overlay/featured_hue6e98563a43e1fff71b9dbbf8b46eac3_168340_0x150_resize_lanczos_2.png" alt="Presentation Overlay" class="lazyload">
-    </a>
-    
-  </div>
-</div>
-
-    
-  
-
-  
-  
-  
-
-    
-    
-      
-    
-
-    
-
-    <div class="see-all">
-      <a href="/post/">
-        See all posts
-        <i class="fas fa-angle-right"></i>
-      </a>
-    </div>
-  
-
-</div>
-
-
-    
-      </div>
-    
-
-    </div>
-  </section>
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="featured" class="home-section wg-featured  "  >
-   <div class="home-section-bg " ></div>
-    <div class="container">
-
-    
-      <div class="row  ">
-      
-        
-          <div class="col-12 col-lg-4 section-heading">
-            <h1>Featured Publications</h1>
-            
-          </div>
-        
-      
-    
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-<div class="col-12 col-lg-8">
-
-  
-
-  
-    
-      
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-<div class="card-simple">
-
-  
-    
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-  <span >
-      <a href="/author/sharon-klinkenberg/">Sharon Klinkenberg</a></span>, <span >
-      <a href="/author/marthe-straatemeier/">Marthe Straatemeier</a></span>, <span >
-      <a href="/author/han-van-der-maas/">Han van der Maas</a></span>
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    February 2011
-  </span>
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="pub-publication">
-    
-      In <em>Springer</em>
-    
-  </span>
-  
-
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-  
-
-  
-  
-  
-  
-  
-  
-  <a href="/publication/math-garden/">
-    <div class="img-hover-zoom"><img src="/publication/math-garden/featured_hu8414bb776cd751f40f7d7d24f8c45684_96816_d4f1c872b870778929c75447ab3fff9e.jpg" data-src="/publication/math-garden/featured_hu8414bb776cd751f40f7d7d24f8c45684_96816_808x455_fill_q75_lanczos_right.jpg" class="article-banner lazyload" alt="Computer adaptive practice of Maths ability using a new item response model for on the fly ability and difficulty estimation"></div>
-  </a>
-  
-
-  <h3 class="article-title mb-1 mt-3">
-    <a href="/publication/math-garden/">Computer adaptive practice of Maths ability using a new item response model for on the fly ability and difficulty estimation</a>
-  </h3>
-
-  
-  <a href="/publication/math-garden/" class="summary-link">
-    <div class="article-style">
-      <p>In this paper we present a model for computerized adaptive practice and monitoring. This model is used in the Maths Garden, a web-based monitoring system, which includes a challenging web environment for children to practice arithmetic. Using a new item response model based on the Elo (1978) rating system and an explicit scoring rule, estimates of the ability of persons and the difficulty of items are updated with every answered item, allowing for on the fly item calibration. In the scoring rule both accuracy and response time are accounted for. Items are sampled with a mean success probability of .75, making the tasks challenging yet not too difficult. In a period of ten months our sample of 3648 children completed over 3.5 million arithmetic problems. The children completed about 33% of these problems outside school hours. Results show better measurement precision, high validity and reliability, high pupil satisfaction, and many interesting options for monitoring progress, diagnosing errors and analyzing development.</p>
-    </div>
-  </a>
-  
-
-  
-  <div class="btn-links">
-    
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://www.sciencedirect.com/science/article/pii/S0360131511000418" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/">
-    Project
-  </a>
-  
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/https://doi.org/10.1016/j.compedu.2011.02.003" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-
-  </div>
-  
-
-</div>
-
-    
-  
-
-  
-  
-  
-
-</div>
-
-
-    
-      </div>
-    
-
-    </div>
-  </section>
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="publications" class="home-section wg-pages  "  >
-   <div class="home-section-bg " ></div>
-    <div class="container">
-
-    
-      <div class="row  ">
-      
-        
-          <div class="col-12 col-lg-4 section-heading">
-            <h1>Recent Publications</h1>
-            
-          </div>
-        
-      
-    
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-<div class="col-12 col-lg-8">
-
-  
-
-  
-    
-      <div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      <a href="/author/sharon-klinkenberg/">Sharon Klinkenberg</a></span>
-  </span>
-  (2017).
-  <a href="/publication/formative_assessment/">The Role of Formative Assessment in a Blended Learning Course</a>.
-  Springer.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/https://doi.org/10.1007/978-3-319-57744-9_6" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-</p>
-
-  
-  
-</div>
-
-    
-  
-    
-      <div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      <a href="/author/sharon-klinkenberg/">Sharon Klinkenberg</a></span>, <span >
-      <a href="/author/silvester-draaijer/">Silvester Draaijer</a></span>
-  </span>
-  (2015).
-  <a href="/publication/cbalpha/">A Practical Procedure for the Construction and Reliability Analysis of Fixed-Length Tests with Randomly Drawn Test Items</a>.
-  Springer.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/ShKlinkenberg/Simulation-for-determining-test-reliability-of-sparse-data-sets" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/https://doi.org/10.1007/978-3-319-27704-2_6" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-</p>
-
-  
-  
-</div>
-
-    
-  
-    
-      <div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      <a href="/author/sharon-klinkenberg/">Sharon Klinkenberg</a></span>, <span >
-      <a href="/author/marthe-straatemeier/">Marthe Straatemeier</a></span>, <span >
-      <a href="/author/han-van-der-maas/">Han van der Maas</a></span>
-  </span>
-  (2011).
-  <a href="/publication/math-garden/">Computer adaptive practice of Maths ability using a new item response model for on the fly ability and difficulty estimation</a>.
-  In <em>Springer</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://www.sciencedirect.com/science/article/pii/S0360131511000418" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/">
-    Project
-  </a>
-  
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/https://doi.org/10.1016/j.compedu.2011.02.003" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-</p>
-
-  
-  
-</div>
-
-    
-  
-
-  
-  
-  
-
-</div>
-
-
-    
-      </div>
-    
-
-    </div>
-  </section>
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="contact" class="home-section wg-contact  "  >
-   <div class="home-section-bg " ></div>
-    <div class="container">
-
-    
-      <div class="row  ">
-      
-        
-          <div class="col-12 col-lg-4 section-heading">
-            <h1>Contact</h1>
-            
-          </div>
-        
-      
-    
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="col-12 col-lg-8">
-  
-
-  
-
-  <ul class="fa-ul">
-
-    
-    <li>
-      <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
-      <span id="person-email"><a href="mailto:S.Klinkenberg@uva.nl">S.Klinkenberg@uva.nl</a></span>
-    </li>
-    
-
-    
-    <li>
-      <i class="fa-li fas fa-phone fa-2x" aria-hidden="true"></i>
-      <span id="person-telephone"><a href="tel:&#43;31%2020%20525%206904">&#43;31 20 525 6904</a></span>
-    </li>
-    
-
-    
-    
-      
-      <li>
-        <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
-        <span id="person-address">Nieuwe Achtergracht 129B, 1018 VZ Amsterdam</span>
-      </li>
-    
-
-    
-
-    
-
-    
-
-    
-    
-
-  </ul>
-
-  
-  <div class="d-none">
-    <input id="map-provider" value="2">
-    <input id="map-lat" value="52.364333">
-    <input id="map-lng" value="4.912162">
-    <input id="map-dir" value="Nieuwe Achtergracht 129B, 1018 VZ Amsterdam">
-    <input id="map-zoom" value="15">
-    <input id="map-api-key" value="">
-  </div>
-  <div id="map"></div>
-  
-
-</div>
-
-
-    
-      </div>
-    
-
-    </div>
-  </section>
-
-
-
-  </div>
-
-  <div class="page-footer">
-    
-    
-    <div class="container">
-      <footer class="site-footer">
-  
-
-  <p class="powered-by">
-    © 2016 Sharon Klinkenberg
-  </p>
-
-  
-  
-
-
-
-
-
-
-  <p class="powered-by">
-    
-    
-    
-    Published with
-    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
-    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
-    open source</a> website builder that empowers creators.
-    
-  </p>
-</footer>
-
-    </div>
-    
-  </div>
-
-  
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Download
-        </a>
-        <div id="modal-error"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-      
-
-    
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-
-      
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
-
-      
-
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js"></script>
-        
-      
-
-    
-
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
-    
-
-    
-    
-    <script>const code_highlighting = true;</script>
-    
-
-    
-    
-    
-    
-    
-    
-    <script>
-      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
-      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
-      const content_type = {
-        'post': "Posts",
-        'project': "Projects",
-        'publication' : "Publications",
-        'event' : "Events",
-        'slides' : "Slides"
-        };
-    </script>
-    
-
-    
-    
-
-    
-    
-    <script id="search-hit-fuse-template" type="text/x-template">
-      <div class="search-hit" id="summary-{{key}}">
-      <div class="search-hit-content">
-        <div class="search-hit-name">
-          <a href="{{relpermalink}}">{{title}}</a>
-          <div class="article-metadata search-hit-type">{{type}}</div>
-          <p class="search-hit-description">{{snippet}}</p>
-        </div>
-      </div>
-      </div>
-    </script>
-    
-
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-    
-
-    
-    
-
-    
-    
-    
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-52d5ed9c95b36f38ec5e6dca38626bd0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-52d5ed9c95b36f38ec5e6dca38626bd0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-52d5ed9c95b36f38ec5e6dca38626bd0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-sample-listings .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-sample-listings'] = new List('listing-sample-listings', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-talks .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-talks'] = new List('listing-talks', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
         });
       }
-    </script>
-    
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
-    
-    
+<link rel="stylesheet" href="custom-style.css">
+</head>
 
-    
-    
+<body class="nav-fixed fullcontent quarto-light">
 
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Klinkenberg</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#research"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#talks"> 
+<span class="menu-text">Talks</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-fun" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Fun</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-fun">    
+        <li>
+    <a class="dropdown-item" href="./content/post/index.html">
+ <span class="dropdown-text">Blogs</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./content/project/index.html">
+ <span class="dropdown-text">Projects</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      
-      
-    
-    
-    <script src="/js/wowchemy.min.572b7caf7fe601716a0f74d67d754c21.js"></script>
+<!-- main -->
+<main class="content" id="quarto-document-content">
 
-    
+
+
+
+<div class="quarto-about-trestles">
+  <div class="about-entity">
+    <img src="images/klinkenberg.jpg" class="about-image
+  round " style="height: 10em; width: 10em;">
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Sharon Klinkenberg</h1>
+<p class="subtitle lead">Dr in Psychometrics</p>
+</div>
+<div class="quarto-title-meta">
+  </div>
+</header>
+    <div class="about-links">
+  <a href="https://www.linkedin.com/in/sharonklinkenberg/" class="about-link" rel="" target="">
+    <i class="bi bi-linkedin"></i>
+     <span class="about-link-text"></span>
+  </a>
+  <a href="https://github.com/ShKlinkenberg" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text"></span>
+  </a>
+  <a href="javascript:window.location.href = 'mailto:' + ['s.klinkenberg','uva.nl'].join('@')" class="about-link" rel="" target="">
+    <i class="bi bi-envelope"></i>
+     <span class="about-link-text"></span>
+  </a>
+  <a href="https://www.youtube.com/channel/UCscyOTFuPepIFyyDWrf2CkQ" class="about-link" rel="" target="">
+    <i class="bi bi-youtube"></i>
+     <span class="about-link-text"></span>
+  </a>
+  <a href="https://scholar.google.nl/citations?user=rB1Afg4AAAAJ&amp;hl=nl" class="about-link" rel="" target="">
+    <i class="bi bi-mortarboard-fill"></i>
+     <span class="about-link-text"></span>
+  </a>
+</div>
+  </div>
+  <div class="about-contents"><div id="hero-heading">
+<p>I’m a psychometrician, statistician, and <a href="https://www.surf.nl/winnaars-surf-onderwijsawards-2018#:~:text=2018%20%2D%20Sharon%20Klinkenberg-,Sharon%20Klinkenberg,-%2D%20winnaar%20Docenten">educational innovator</a> based in Amsterdam. I’m co-director of the <a href="https://tlc.uva.nl/fmg">Teaching &amp; Learning Centre</a> at the <a href="https://www.uva.nl/over-de-uva/organisatie/faculteiten/faculteit-der-maatschappij-en-gedragswetenschappen/faculteit-der-maatschappij-en-gedragswetenschappen.html">Faculty of Social and Behavioural Sciences</a> at the <a href="https://www.uva.nl/profiel/k/l/s.klinkenberg/s.klinkenberg.html">University of Amsterdam</a>, where I teach statistical reasoning and conduct research in psychometrics, computer adaptive testing, and the integration of digital assessment with learning. I also lead the university’s involvement in national initiatives to modernize digital assessment practices. As lead for research universities in the <a href="https://npuls.nl">Npuls</a> <a href="https://npuls.nl/onderwerpen/digitaal-toetsen-en-ontwikkelen">Digital Testing &amp; Development</a> division, I work with colleagues across the Dutch education sector to support secure, reliable, and pedagogically sound digital assessment processes and help institutions develop a clear vision for assessment in the digital age.</p>
+<section id="interests" class="level3">
+<h3 data-anchor-id="interests">Interests</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Digital Assessment</li>
+<li>Adaptive Testing</li>
+<li>Psychometrics</li>
+<li>Higher Education</li>
+<li>EdTech</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Educational Leadership</li>
+<li>Data Science</li>
+<li>Learning Analytics</li>
+<li>Blended Learning</li>
+<li>Statistics Education</li>
+</ul>
+</div>
+</div>
+</section>
+</div></div>
+</div>
+
+<section id="research" class="level2">
+<h2 data-anchor-id="research">Research</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><a href="./content/publication/index.html">Full Publication List</a></p>
+</div><div class="column" style="width:55%;">
+<div class="zoom-img">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/rekentuin2.jpg" class="img-fluid figure-img"></p>
+<figcaption>Rekentuin</figcaption>
+</figure>
+</div>
+</div>
+<section id="computer-adaptive-practice-of-maths-ability-using-a-new-item-response-model-for-on-the-fly-ability-and-difficulty-estimation" class="level3">
+<h3 data-anchor-id="computer-adaptive-practice-of-maths-ability-using-a-new-item-response-model-for-on-the-fly-ability-and-difficulty-estimation">Computer adaptive practice of Maths ability using a new item response model for on the fly ability and difficulty estimation</h3>
+<p>In this paper we present a model for computerized adaptive practice and monitoring. This model is used in the Maths Garden, a web-based monitoring system, which includes a challenging web environment for children to practice arithmetic. Using a new item response model based on the Elo (1978) rating system and an explicit scoring rule, estimates of the ability of persons and the difficulty of items are updated with every answered item, allowing for on the fly item calibration…</p>
+</section>
+</div>
+</div>
+</section>
+<section id="talks" class="level2">
+<h2 data-anchor-id="talks">Talks</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><a href="./content/event/_index.html">All talks</a></p>
+</div><div class="column" style="width:55%;">
+<div id="listing-talks" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-1">
+<div class="g-col-1" data-index="0" data-categories="YXNzZXNzbWVudCUyQ29ubGluZS1wcm9jdG9yaW5n" data-listing-date-sort="1616713200000" data-listing-file-modified-sort="1767108423921" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
+<a href="./content/event/2021-03-26-webinar-kansen-en-dilemma-s-online-proctoring-na-corona/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="content/event/2021-03-26-webinar-kansen-en-dilemma-s-online-proctoring-na-corona/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Webinar: Kansen en dilemma’s online proctoring na corona
+</h5>
+<div class="card-text listing-description delink">
+Op vrijdag 26 maart organiseerde de Vraagbaak Online Onderwijs met de SURF Special Interest Group (SIG) Digitaal toetsen en de Werkgroep Toetsen op afstand het webinar…
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="YXNzZXNzbWVudCUyQ2luY2x1c2l2ZS1lZHVjYXRpb24lMkNvbmxpbmUtcHJvY3RvcmluZw==" data-listing-date-sort="1612738800000" data-listing-file-modified-sort="1767108693872" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="45">
+<a href="./content/event/2021-02-08-ecio-congress-2021/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="content/event/2021-02-08-ecio-congress-2021/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+ECIO congress 2021
+</h5>
+<div class="card-text listing-description delink">
+Panel participation at the ECIO congress 2021 on inclusive assessment. What is needed to make assessment more accessible.
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
+</div>
+</section>
+<section id="blog-posts" class="level2">
+<h2 data-anchor-id="blog-posts">Blog posts</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><a href="./content/post/index.html">All blogs</a></p>
+</div><div class="column" style="width:55%;">
+<div id="listing-sample-listings" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-1">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1611010800000" data-listing-file-modified-sort="1766947379209" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="217">
+<a href="./content/post/GR_2019_blog_4/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="content/post/GR_2019_blog_4/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+3D tracked!
+</h5>
+<div class="card-text listing-description delink">
+Do you remember that grassroots project I started back in 2019? Well, after months of COVID crisis management and online teaching, I finally came around to finishing the…
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1610233200000" data-listing-file-modified-sort="1766945862060" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="628">
+<a href="./content/post/2021-01-10-online-lecture/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="content/post/2021-01-10-online-lecture/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Live Online Lecturing
+</h5>
+<div class="card-text listing-description delink">
+I have been teaching a large scale course amidst the pandemic. In this post, I want to share my experiences with live lecturing online.
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
+</div>
 
 
 
 
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+      <i class="bi bi-c-circle" role="img">
+</i> 
+  </li>  
+    <li class="nav-item">
+ ⠀2026, Klinkenberg
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/ShKlinkenberg/site">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
-</body>
-</html>
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

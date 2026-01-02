@@ -1,0 +1,11 @@
+---
+# header:
+#  caption: "Writing blogs"
+#  image: "storyblocks-hands-of-man-typing-on-laptop_BL-kaDNpZG.jpg"
+title: "Blog Posts"
+listing:
+  contents:
+  - "*.qmd"
+  sort:
+  - "date desc"
+---

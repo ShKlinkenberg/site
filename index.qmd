@@ -1,0 +1,136 @@
+---
+title: "Sharon Klinkenberg"
+subtitle: "Dr in Psychometrics"
+about:
+  id: hero-heading
+  template: trestles
+  image: images/klinkenberg.jpg
+  image-width: 10em
+  image-shape: round
+  links:
+    - icon: linkedin
+ #     text: LinkedIn
+      href: https://www.linkedin.com/in/sharonklinkenberg/
+    - icon: github
+#      text: Github
+      href: https://github.com/ShKlinkenberg
+    - icon: envelope
+      href: "javascript:window.location.href = 'mailto:' + ['s.klinkenberg','uva.nl'].join('@')"
+    - icon: youtube
+      href: https://www.youtube.com/channel/UCscyOTFuPepIFyyDWrf2CkQ
+    - icon: mortarboard-fill
+      href: https://scholar.google.nl/citations?user=rB1Afg4AAAAJ&hl=nl
+listing:
+  - id: sample-listings
+    type: grid
+    contents:
+    - "content/post/*/*.qmd"
+    sort:
+    - "date desc"
+    max-items: 2
+    fields: [image, title, description]
+    grid-columns: 1
+  - id: talks
+    type: grid
+    contents:
+    - "content/event/*/*.qmd"
+    sort:
+    - "date desc"
+    max-items: 2
+    fields: [image, title, description]
+    grid-columns: 1
+---
+
+:::{#hero-heading}
+
+I’m a psychometrician, statistician, and [educational innovator](https://www.surf.nl/winnaars-surf-onderwijsawards-2018#:~:text=2018%20%2D%20Sharon%20Klinkenberg-,Sharon%20Klinkenberg,-%2D%20winnaar%20Docenten) based in Amsterdam. I’m co-director of the [Teaching & Learning Centre](https://tlc.uva.nl/fmg) at the [Faculty of Social and Behavioural Sciences](https://www.uva.nl/over-de-uva/organisatie/faculteiten/faculteit-der-maatschappij-en-gedragswetenschappen/faculteit-der-maatschappij-en-gedragswetenschappen.html) at the [University of Amsterdam](https://www.uva.nl/profiel/k/l/s.klinkenberg/s.klinkenberg.html), where I teach statistical reasoning and conduct research in psychometrics, computer adaptive testing, and the integration of digital assessment with learning. I also lead the university’s involvement in national initiatives to modernize digital assessment practices. As lead for research universities in the [Npuls](https://npuls.nl) [Digital Testing & Development](https://npuls.nl/onderwerpen/digitaal-toetsen-en-ontwikkelen) division, I work with colleagues across the Dutch education sector to support secure, reliable, and pedagogically sound digital assessment processes and help institutions develop a clear vision for assessment in the digital age. 
+
+### Interests
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Digital Assessment
+* Adaptive Testing
+* Psychometrics
+* Higher Education
+* EdTech
+
+:::
+
+::: {.column width="50%"}
+
+* Educational Leadership
+* Data Science
+* Learning Analytics
+* Blended Learning
+* Statistics Education
+
+:::
+
+::::
+
+:::
+
+
+## Research {#research}
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+[Full Publication List](/content/publication/index.qmd)
+
+:::
+
+::: {.column width="55%"}
+
+::: {.zoom-img}
+![Rekentuin](images/rekentuin2.jpg)
+:::
+
+### Computer adaptive practice of Maths ability using a new item response model for on the fly ability and difficulty estimation
+
+In this paper we present a model for computerized adaptive practice and monitoring. This model is used in the Maths Garden, a web-based monitoring system, which includes a challenging web environment for children to practice arithmetic. Using a new item response model based on the Elo (1978) rating system and an explicit scoring rule, estimates of the ability of persons and the difficulty of items are updated with every answered item, allowing for on the fly item calibration...
+:::
+
+::::
+
+## Talks {#talks}
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+[All talks](/content/event/_index.qmd)
+
+:::
+
+::: {.column width="55%"}
+
+::: {#talks}
+:::
+
+:::
+
+::::
+
+## Blog posts {#blog-posts}
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+[All blogs](/content/post/index.qmd)
+
+:::
+
+::: {.column width="55%"}
+
+::: {#sample-listings}
+:::
+
+:::
+
+::::

@@ -1,0 +1,43 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+  - index.qmd
+  - content/post/index.qmd
+  - content/post/switched/index.qmd
+  - content/post/*/*.qmd
+  - content/publication/index.qmd
+  - content/event/*/*.qmd
+  - content/event/_index.qmd 
+  - content/project/*.qmd
+  
+
+website:
+  title: "Klinkenberg"
+  navbar:
+    right:
+      - href: index.qmd#research
+        text: Research
+      - href: index.qmd#talks
+        text: Talks
+      - text: Fun
+        menu:
+        - href: content/post/index.qmd
+          text: Blogs
+        - href: content/project/index.qmd
+          text: Projects
+  page-footer: 
+    left:
+      - icon: c-circle
+      - text: "⠀2026, Klinkenberg" 
+    right: 
+      - icon: github
+        href: https://github.com/ShKlinkenberg/site
+
+format:
+  html:
+    theme: cosmo
+    css:
+      - custom-style.css
+    smooth-scroll: true
+    brand: _brand.yml

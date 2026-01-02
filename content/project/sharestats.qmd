@@ -1,0 +1,9 @@
+---
+title: "ShareStats"
+author: "Klinkenberg"
+date: "2025-12-31"
+categories: [OER, statistics]
+---
+
+[ShareStats](https://www.sharestats.nl) is an open educational resource (OER) that provides free and accessible materials for learning statistics. The project aims to democratize statistical education by offering high-quality resources that anyone can use, modify, and share.
+
