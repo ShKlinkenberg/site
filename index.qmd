@@ -1,6 +1,6 @@
 ---
 title: "Sharon Klinkenberg"
-subtitle: "Dr in Psychometrics | Senior Lecturer"
+subtitle: "Dr in Psychometrics"
 about:
   id: hero-heading
   template: trestles
@@ -43,7 +43,7 @@ listing:
 
 :::{#hero-heading}
 
-Dr Klinkenberg is a senior lecturer at the department of Communication Science. His teaching is mainly focused on statistics and research methods. Sharon is an educational innovator at the forefront of educational technology. As a winner of the national [SURF education award](https://www.surf.nl/winnaars-surf-onderwijsawards-2018#:~:text=2018%20%2D%20Sharon%20Klinkenberg-,Sharon%20Klinkenberg,-%2D%20winnaar%20Docenten), he specialized in digital assessment, and integrates formative and summative assessment in order to personalize large scale education. His research is focused on the validity and reliability of adaptive assessment methods and the effectiveness of blended learning interventions.
+I’m a psychometrician, statistician, and [educational innovator](https://www.surf.nl/winnaars-surf-onderwijsawards-2018#:~:text=2018%20%2D%20Sharon%20Klinkenberg-,Sharon%20Klinkenberg,-%2D%20winnaar%20Docenten) based in Amsterdam. I’m co-director of the [Teaching & Learning Centre](https://tlc.uva.nl/fmg) at the [Faculty of Social and Behavioural Sciences](https://www.uva.nl/over-de-uva/organisatie/faculteiten/faculteit-der-maatschappij-en-gedragswetenschappen/faculteit-der-maatschappij-en-gedragswetenschappen.html) at the [University of Amsterdam](https://www.uva.nl/profiel/k/l/s.klinkenberg/s.klinkenberg.html), where I teach statistical reasoning and conduct research in psychometrics, computer adaptive testing, and the integration of digital assessment with learning. I also lead the university’s involvement in national initiatives to modernize digital assessment practices. As lead for research universities in the [Npuls](https://npuls.nl) [Digital Testing & Development](https://npuls.nl/onderwerpen/digitaal-toetsen-en-ontwikkelen) division, I work with colleagues across the Dutch education sector to support secure, reliable, and pedagogically sound digital assessment processes and help institutions develop a clear vision for assessment in the digital age. 
 
 ### Interests
 
@@ -55,7 +55,7 @@ Dr Klinkenberg is a senior lecturer at the department of Communication Science. 
 * Adaptive Testing
 * Psychometrics
 * Higher Education
-* Educational Technology
+* EdTech
 
 :::
 
@@ -79,8 +79,6 @@ Dr Klinkenberg is a senior lecturer at the department of Communication Science. 
 :::: {.columns}
 
 ::: {.column width="45%"}
-
-Highlighted Publications
 
 [Full Publication List](/content/publication/index.qmd)
 
