@@ -19,3 +19,11 @@ Retrieved 2025-12-29, License - CC BY-SA 4.0
 .zoom-img img:hover   {
   transform: scale(1.2);
 }
+
+.about-link {
+  vertical-align: middle;
+}
+
+.bi {
+  margin-right: 0px !important;
+}
