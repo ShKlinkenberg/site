@@ -1,0 +1,116 @@
+---
+title: "Press Kit"
+categories: ["press kit"]
+toc: true
+toc-location: left
+toc-depth: 4
+---
+
+## Images
+
+### Web resources
+
+#### Portrait
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+![High-Resolution](images/press/Sharon-Klinkenberg-Portrait-1000x1210.jpg){width=80% fig-align="left"}
+
+1000 x 1210 pixels (142 KB)
+
+<a class="btn btn-outline-primary" href="images/press/Sharon-Klinkenberg-Portrait-1000x1210.jpg" download>Download</a>
+:::
+
+::: {.column width="30%"}
+
+![Mid-Resolution](images/press/Sharon-Klinkenberg-Portrait-500x605.jpg){width=80% fig-align="left"}
+
+500 x 605 pixels (42 KB)
+
+<a class="btn btn-outline-primary" href="images/press/Sharon-Klinkenberg-Portrait-500x605.jpg" download>Download</a>
+:::
+
+::: {.column width="25%"}
+
+![Low-Resolution](images/press/Sharon-Klinkenberg-Portrait-300x363.jpg){width=80% fig-align="left"}
+
+300 x 363 pixels (19 KB)
+
+<a class="btn btn-outline-primary" href="images/press/Sharon-Klinkenberg-Portrait-300x363.jpg" download>Download</a>
+:::
+
+::::
+
+#### Square
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+![High-Resolution](images/press/Sharon-Klinkenberg-square-1000x1000.jpg){width=80% fig-align="left"}
+
+1000 x 1210 pixels (142 KB)
+
+<a class="btn btn-outline-primary" href="images/press/Sharon-Klinkenberg-square-1000x1000.jpg" download>Download</a>
+:::
+
+::: {.column width="30%"}
+
+![Mid-Resolution](images/press/Sharon-Klinkenberg-square-500x500.jpg){width=80% fig-align="left"}
+
+500 x 605 pixels (42 KB)
+
+<a class="btn btn-outline-primary" href="images/press/Sharon-Klinkenberg-square-500x500.jpg" download>Download</a>
+:::
+
+::: {.column width="25%"}
+
+![Low-Resolution](images/press/Sharon-Klinkenberg-square-300x300.jpg){width=80% fig-align="left"}
+
+300 x 363 pixels (19 KB)
+
+<a class="btn btn-outline-primary" href="images/press/Sharon-Klinkenberg-square-300x300.jpg" download>Download</a>
+:::
+
+::::
+
+### Print resource
+
+High-resolution TIFF images in CMYK color profile for print (**101.5 MB**)
+
+<a class="btn btn-outline-primary" href="images/press/Sharon-Klinkenberg-Portrait.tif" download>Download</a>
+
+## Biography
+
+:::: {style="grid-template-columns: 1fr 1fr;" .d-grid .gap-0 .column-gap-3}
+
+::: {.p-2}
+
+### English
+
+Dr. Klinkenberg is a psychometrician, statistician, and educational innovator at the Department of Communication Science at the University of Amsterdam. He co-directs the Teaching & Learning Centre of the Faculty of Social and Behavioural Sciences, teaches statistical reasoning, and researches psychometrics, computer adaptive testing, and digital assessment in education. He also represents research universities in the Npuls Digital Testing & Development team, where he helps shape secure, reliable, and educationally sound digital assessment practices across the Dutch higher education sector.
+
+:::
+
+::: {.p-2}
+
+### Dutch
+
+Dr. Klinkenberg is psychometrist, statisticus en onderwijsvernieuwer aan de afdeling Communicatiewetenschap van de Universiteit van Amsterdam. Hij is co-directeur van het Teaching & Learning Centre van de Faculteit der Maatschappij- en Gedragswetenschappen. Hij geeft onderwijs in statistisch redeneren en doet onderzoek doet in de psychometrie, computer­gebaseerd adaptief toetsen en digitale toetsing in het onderwijs. Daarnaast vertegenwoordigt hij de universiteiten in het Npuls team Digitaal Toetsen & Ontwikkelen, waar hij bijdraagt aan veilige, betrouwbare en onderwijskundig doordachte digitale toetsing in het Nederlandse hoger onderwijs.
+
+:::
+
+::::
+
+## Socials & Web presence
+
+<ul class="list-unstyled">
+<li><i class="bi bi-globe"></i> Website: [https://www.klinkenberg.amsterdam](https://www.klinkenberg.amsterdam)</li>
+<li><i class="bi bi-linkedin"></i> LinkedIn: [https://www.linkedin.com/in/sharonklinkenberg/](https://www.linkedin.com/in/sharonklinkenberg/)</li>
+<li><i class="bi bi-github"></i> GitHub: [https://github.com/ShKlinkenberg](https://github.com/ShKlinkenberg)</li>
+<li><i class="bi bi-youtube"></i> YouTube: [https://www.youtube.com/@SharonKlinkenberg](https://www.youtube.com/@SharonKlinkenberg)</li>
+<li><i class="bi bi-spotify"></i> spotify TLC Podcast: [https://open.spotify.com/show/0XnrZOs2heUfVf5GUWaqjZ?si=c86ce6ae3103446e](https://open.spotify.com/show/0XnrZOs2heUfVf5GUWaqjZ?si=c86ce6ae3103446e)</li>
+<li><i class="bi bi-mortarboard-fill"></i> Google Scholar: [https://scholar.google.nl/citations?hl=en&pli=1&user=rB1Afg4AAAAJ](https://scholar.google.nl/citations?hl=en&pli=1&user=rB1Afg4AAAAJ)</li>
+</ul>

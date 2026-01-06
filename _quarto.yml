@@ -10,6 +10,7 @@ project:
   - content/event/*/*.qmd
   - content/event/_index.qmd 
   - content/project/*.qmd
+  - presskit.qmd
   
 
 website:
