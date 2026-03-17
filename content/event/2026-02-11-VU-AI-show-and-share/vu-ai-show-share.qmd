@@ -4,24 +4,34 @@ subtitle: "My Practical AI Workflow for Education and Research"
 author: "Klinkenberg"
 date: "2026-02-11"
 categories: [AI, show-and-share]
-draft: true
+draft: false
 image: mq1.png
 toc: true
 toc-depth: 4
 toc-location: left
 ---
 
-As a researcher and educator at the University of Amsterdam, my toolkit used to revolve entirely around RStudio. However, I’ve recently migrated my daily operations to Positron, a next-generation IDE that I’ve found to be much more deeply integrated with AI than its predecessors. 
+As a researcher and educator at the University of Amsterdam, I have worked with RStudio for over 15 years. But after trying out [Positron](https://positron.posit.com), the next-generation IDE built by [Posit](https://posit.co/about/), I haven't looked back since.
 
 In my session at the VU AI show & share event, I tempted the demo gods and used live AI tools to generate my presentation on the spot. This isn’t about using AI for the sake of novelty; it’s about a fundamental shift in how we create content, supervise students, and conduct research.
 
-### Developing and Implementing Teaching Methods (The End of PowerPoint)
+### Generating and deploying Presentations
 
-I made a choice back in 2015 that changed my teaching forever: I stopped using PowerPoint. Instead, I moved to a workflow powered by Quarto and reveal.js, which allows me to generate high-quality, HTML-based presentations directly from Markdown.
+I made a choice back in 2015 to stop using PowerPoint. Instead, I moved to a workflow powered by Quarto and reveal.js, which allows me to generate high-quality, HTML-based presentations in markdown format.
 
-In my current practice, I use Claude 3.5 Sonnet (which, in my experience, is currently the top-performing model for coding tasks) integrated directly into Positron. I provide the LLM with my session abstract, and it structures a complete slide deck for me in seconds. These slides are then deployed via GitHub Pages. It’s important to understand that pushing to GitHub isn’t just a backup, it is the publishing act. If a student identifies a typo mid-lecture, I can edit the source, push the change, and the update is live the moment they refresh their browser.
+::: aside
+<iframe width="255" height="139" src="https://www.youtube.com/embed/IURIBldlp5Q?si=_tJFGmPRu-sbG3xm&amp;start=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Generating presentations.
+:::
+
+In my current practice, I use Claude integrated directly into Positron. I provide the LLM with my session abstract, and it structures a complete slide deck for me in seconds. These slides are then deployed via GitHub Pages. It’s important to understand that pushing to GitHub isn’t just a backup, it is the publishing act. If a student identifies a typo mid-lecture, I can edit the source, push the change, and the update is live the moment they refresh their browser.
 
 While Quarto allows me to output to PDF or PowerPoint if needed, the HTML format offers advantages static files simply cannot match:
+
+::: aside
+<iframe width="255" height="139" src="https://www.youtube.com/embed/IURIBldlp5Q?si=_tJFGmPRu-sbG3xm&amp;start=247" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Deploying to GitHub.
+:::
 
 * Live Interactivity: I can embed live YouTube videos or interactive WebGL images, such as a 3D neuron that I can rotate and manipulate during the talk.
 * Dynamic Formulas: Complex mathematical notations are rendered natively and perfectly, ensuring accuracy across all devices.
@@ -29,9 +39,14 @@ While Quarto allows me to output to PDF or PowerPoint if needed, the HTML format
 * Student Accessibility: Students don't have to struggle with downloading massive .pptx files from a Virtual Learning Environment like Canvas; they simply scan a QR code or click a link to access a lightweight, mobile-friendly site.
 * Universal Design for Learning: The HTML format allows for better accessibility features, such as screen reader compatibility and adjustable text sizes, making the content more inclusive for all students. 
 
-### Open Educational Resources (OER) and Collaborative Books
+### Open Educational Resource Textbooks
 
-For our "Statistical Inference" course, we developed an Open Access book using this same framework. Because the LLM in Positron has context-aware access to my entire project folder, it acts as a true writing partner. It can suggest text that matches my specific tone, identify images within subdirectories, and automatically generate the correct Markdown references.
+For our "Statistical Reasoning" course, we developed an Open Access book using this same framework. Because the LLM in Positron has context-aware access to my entire project folder, it acts as a true writing partner. It can suggest text that matches my specific tone, identify images within subdirectories, and automatically generate the correct Markdown references.
+
+::: aside
+<iframe width="255" height="139" src="https://www.youtube.com/embed/IURIBldlp5Q?si=_tJFGmPRu-sbG3xm&amp;start=775" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Writing support.
+:::
 
 This transition from a "static resource" to a "living document" is best illustrated by a student engagement I’ll never forget:
 
@@ -39,14 +54,20 @@ This transition from a "static resource" to a "living document" is best illustra
 
 By hosting the source code on GitHub, the book becomes a collaborative effort. We even integrate interactive Shiny apps directly into chapters, allowing students to run simulations and pull real-time data samples as they read.
 
-### Redefining Thesis Supervision: Process Over Product
+### Thesis Supervision
 
 The "product-focused" model of supervision—waiting for a final PDF to land in your inbox—is increasingly fragile in the AI age. My philosophy has shifted toward monitoring the process. I’ve moved my supervision entirely to Microsoft Teams, eliminating the black hole of email threads.
+
+::: aside
+<iframe width="255" height="139" src="https://www.youtube.com/embed/IURIBldlp5Q?si=_tJFGmPRu-sbG3xm&amp;start=1651" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Using teams for supervision.
+:::
+
+> Process Over Product
 
 The key technical step most people miss is having the student "Add a shortcut to OneDrive" for their specific Teams folder. This ensures their local working files are constantly synced to the cloud environment I can access. This isn't about being a "police officer"—it’s about being an active guide. By checking the Version History in Word, I can see the gradual development of their ideas. If a massive block of text appears instantly without a history of incremental edits, it’s a signal to have a conversation about their AI usage early, rather than discovering a problem at the final submission.
 
 #### The Supervision Shift
-
 
 | Traditional Supervision <br> (Product-Focused) | AI-Age Supervision <br> (Process-Focused) |
 |---|---|
@@ -55,11 +76,16 @@ The key technical step most people miss is having the student "Add a shortcut to
 | Reviewing only the final "output" or "result." | Monitoring Version History to track the evolution of thought. |
 | High risk of undetected, late-stage AI plagiarism. | Early intervention when "large chunks" of text appear suddenly. |
 
-### Research Workflows and the Rise of DataBots
+### Research Workflows and the Rise of Databots
 
-In my research, I am currently experimenting with the DataBot add-on within Positron for what I call "language-based statistics". You can start up a session and just talk to the bot in natural language, asking it to load data, run analyses, and generate visualizations. The most "next-level" aspect of this workflow is the bot’s ability to self-correct. If the initial R code generates an error, the bot doesn't just give up; it analyzes the R console output, diagnoses the mistake, and iterates on the code until it works.
+In my research, I am currently experimenting with the Databot add-on within Positron for what I call "language-based statistics". You can start up a session and just talk to the bot in natural language, asking it to load data, run analyses, and generate visualizations. The most "next-level" aspect of this workflow is the bot’s ability to self-correct. If the initial R code generates an error, the bot doesn't just give up; it analyzes the R console output, diagnoses the mistake, and iterates on the code until it works. At the end it spits out a full markdown report with all the code and output, which you can then render to HTML, Word, or PDF.
 
-Steps to a Markdown Report via DataBot:
+::: aside
+<iframe width="255" height="139" src="https://www.youtube.com/embed/IURIBldlp5Q?si=_tJFGmPRu-sbG3xm&amp;start=2404" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+AI data analysis in action.
+:::
+
+Steps to a Markdown Report via Databot:
 
 1. Load Data: Point the bot to a data file in your project folder; it identifies the format, imports it, and summarises its structure.
 2. Propose Analysis: The bot suggests relevant next steps based on the data. You approve, reject, or refine the proposed analyses and request additional visualisations or models.
@@ -78,13 +104,12 @@ Adopting these tools requires a professional approach to security and a clear un
 
 ### Closing Thoughts
 
-Integrating these tools has saved me an immense amount of time, especially when generating answer models for complex exam questions. While the learning curve exists, the move toward a transparent, version-controlled, and automated workflow is the way forward for modern academia. I invite you to explore my GitHub repositories and begin your own transition from RStudio to a more AI-integrated future.
+Integrating these tools has saved me an immense amount of time. While the learning curve exists, the move toward a transparent, version-controlled, and automated workflow is the way forward for modern academia. I invite you to begin your own transition to a more AI-integrated future.
 
 ### Resources Mentioned
 
-* [Positron](https://positron.posit.co/): The new, AI-integrated IDE for R and Python.
+* [Positron](https://positron.posit.com): The new, AI-integrated IDE for R and Python.
 * [Quarto](https://quarto.org/): The open-source system for technical publishing (HTML, PDF, PPT).
-* [GitHub Copilot](https://github.com/features/copilot): AI pair programming (free for verified educators with a redacted paystub).
-* DataBots: Specialized add-ons for language-based data analysis.
-* [Claude 3.5 Sonnet](https://www.anthropic.com/claude): Currently my recommended LLM for code generation and technical writing.
+* [GitHub Copilot for educators](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro): AI pair programming (free for verified educators with a redacted paystub).
+* [Databot](https://positron.posit.co/databot.html): Specialized add-ons for language-based data analysis.
 
