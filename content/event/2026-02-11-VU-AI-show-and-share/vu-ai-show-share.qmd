@@ -56,7 +56,7 @@ By hosting the source code on GitHub, the book becomes a collaborative effort. W
 
 ### Thesis Supervision
 
-The "product-focused" model of supervision—waiting for a final PDF to land in your inbox—is increasingly fragile in the AI age. My philosophy has shifted toward monitoring the process. I’ve moved my supervision entirely to Microsoft Teams, eliminating the black hole of email threads.
+The "product-focused" model of supervision, waiting for a final PDF to land in your inbox, is increasingly fragile in the AI age. My philosophy has shifted toward monitoring the process. I’ve moved my supervision entirely to Microsoft Teams, eliminating the black hole of email threads.
 
 ::: aside
 <iframe width="255" height="139" src="https://www.youtube.com/embed/IURIBldlp5Q?si=_tJFGmPRu-sbG3xm&amp;start=1651" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -65,7 +65,7 @@ Using teams for supervision.
 
 > Process Over Product
 
-The key technical step most people miss is having the student "Add a shortcut to OneDrive" for their specific Teams folder. This ensures their local working files are constantly synced to the cloud environment I can access. This isn't about being a "police officer"—it’s about being an active guide. By checking the Version History in Word, I can see the gradual development of their ideas. If a massive block of text appears instantly without a history of incremental edits, it’s a signal to have a conversation about their AI usage early, rather than discovering a problem at the final submission.
+The key technical step most people miss is having the student "Add a shortcut to OneDrive" for their specific Teams folder. This ensures their local working files are constantly synced to the cloud environment I can access. This isn't about being a "police officer", it’s about being an active guide. By checking the Version History in Word, I can see the gradual development of their ideas. If a massive block of text appears instantly without a history of incremental edits, it’s a signal to have a conversation about their AI usage early, rather than discovering a problem at the final submission.
 
 #### The Supervision Shift
 
@@ -89,7 +89,7 @@ Steps to a Markdown Report via Databot:
 
 1. Load Data: Point the bot to a data file in your project folder; it identifies the format, imports it, and summarises its structure.
 2. Propose Analysis: The bot suggests relevant next steps based on the data. You approve, reject, or refine the proposed analyses and request additional visualisations or models.
-3. Execute & Self-Correct: The bot runs the code, monitors the R console, and iterates automatically when errors occur—whether a missing package, a misnamed variable, or a type mismatch.
+3. Execute & Self-Correct: The bot runs the code, monitors the R console, and iterates automatically when errors occur, whether a missing package, a misnamed variable, or a type mismatch.
 4. Generate Report: Ask the bot to compile everything into a report; it returns the full source text and code needed to render to HTML, Word, or PDF.
 
 This shift means we could stop teaching "button-pushing" in SPSS. Instead, statistics becomes like a language course: students must learn to read the code and critically verify the output.
