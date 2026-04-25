@@ -51,21 +51,21 @@ I’m a psychometrician, statistician, and [educational innovator](https://www.s
 
 ::: {.column width="50%"}
 
-* Digital Assessment
-* Adaptive Testing
-* Psychometrics
+* Educational Leadership
 * Higher Education
 * EdTech
+* Blended Learning
+* Statistics Education
 
 :::
 
 ::: {.column width="50%"}
 
-* Educational Leadership
+* Digital Assessment
+* Adaptive Testing
+* Psychometrics
 * Data Science
 * Learning Analytics
-* Blended Learning
-* Statistics Education
 
 :::
 
