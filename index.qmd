@@ -61,9 +61,9 @@ I’m a psychometrician, statistician, and [educational innovator](https://www.s
 
 ::: {.column width="50%"}
 
+* Psychometrics
 * Digital Assessment
 * Adaptive Testing
-* Psychometrics
 * Data Science
 * Learning Analytics
 
